@@ -1,3 +1,4 @@
+import logging
 import urllib.parse
 
 import requests
@@ -27,16 +28,22 @@ class BelgradTrasnportCrawler(requests.Session):
         else:
             url = urllib.parse.urljoin(self.host, path)
         try:
-            response = self.request(http_method, url, **kwargs, timeout=self.timeout)
+            response = self.request(
+                http_method, url, **kwargs, timeout=self.timeout
+            )
             response.raise_for_status()
             if parse_json:
                 return response.json()
             else:
                 return response
         except requests.JSONDecodeError as err:
-            raise MyBSException(f"Incoming JSON is invalid from char {err.pos}")
+            raise MyBSException(
+                f"Incoming JSON is invalid from char {err.pos}"
+            )
         except requests.TooManyRedirects:
-            raise MyBSException(f"Too much redirects. Allowed: {self.max_redirects}.")
+            raise MyBSException(
+                f"Too much redirects. Allowed: {self.max_redirects}."
+            )
         except requests.HTTPError as err:
             raise MyBSException(f"HTTPError is occured, and it is {err}")
         except requests.Timeout:
@@ -48,6 +55,31 @@ class BelgradTrasnportCrawler(requests.Session):
             raise MyBSException("Connection is lost, try again later.")
         except requests.RequestException as err:
             raise MyBSException(err)
+
+    def get_bs_object(
+        self,
+        html=None,
+        path=None,
+        method="GET",
+        parser="html.parser",
+        **kwargs,
+    ):
+        if (path is None and html is None
+                or path is not None and html is not None):
+            raise MyBSException(
+                "You should pass either path or html "
+                "which will be used to prepare your soup."
+            )
+        if html:
+            return bs(html, parser)
+        else:
+            full_html = self.make_request(method, path, **kwargs)
+            if 200 >= full_html.status_code > 300:
+                raise MyBSException(
+                    "Something wrong with your request. "
+                    f"HTTP status code is {full_html.status_code}."
+                )
+            return bs(full_html.text, parser)
 
     def get_csrf_token(self):
         soup = self.get_bs_object(path="/")
@@ -75,23 +107,31 @@ class BelgradTrasnportCrawler(requests.Session):
         url = self.locale_change_url
         return self.make_request("POST", url, data=form)
 
-    def get_bs_object(
-        self, html=None, path=None, method="GET",
-        parser="html.parser", **kwargs
+    def collect_links_to_crawl(
+            self,
+            path,
+            content_tag=True,
+            attr=None,
+            value=None,
+            clear_from_pdf=False,
     ):
-        if (path is None and html is None
-                or path is not None and html is not None):
-            raise MyBSException(
-                "You should pass either path or html "
-                "which will be used to prepare your soup."
+        page_to_parse = self.get_bs_object(path=path)
+        search_tag_attribute = None
+        if attr and value:
+            search_tag_attribute = {attr: value}
+        found_tags = page_to_parse.find_all(content_tag, search_tag_attribute)
+        tags_with_links = set()
+        for tag in found_tags:
+            link_holder = None
+            for attribute in tag.attrs:
+                if "http" in tag.attrs[attribute]:
+                    link_holder = attribute
+            if link_holder is None:
+                logging.info(f"Chosen tag {tag.name} has no link")
+                continue
+            tags_with_links.add(tag.attrs[link_holder].strip())
+        if clear_from_pdf:
+            return set(
+                filter(lambda link: not link.endswith(".pdf"), tags_with_links)
             )
-        if html:
-            return bs(html, parser)
-        else:
-            full_html = self.make_request(method, path, **kwargs)
-            if 200 >= full_html.status_code > 300:
-                raise MyBSException(
-                    "Something wrong with your request. "
-                    f"HTTP status code is {full_html.status_code}."
-                )
-            return bs(full_html.text, parser)
+        return tags_with_links
