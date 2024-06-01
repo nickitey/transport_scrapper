@@ -108,3 +108,23 @@ class RoutesScrapper(BelgradTrasnportCrawler):
                 departure_days[schedule_day].extend(departure_minutes[i])
             table_row_count += 1
         return departure_days
+
+    def parse_route(self, link):
+        route = BelgradRoute()
+        soup = self.get_bs_object(path=link)
+        route_name = soup.h1.get_text(strip=True)
+        h2_headers = soup.find_all('h2')
+        description, first_station, dbl_description, last_station = (
+            map(lambda tag: tag.get_text(strip=True), h2_headers))
+        route.route_name = route_name
+        route.description = description
+        route.first_station = first_station
+        route.last_station = last_station
+
+        # На странице находятся две таблицы: по одной со временем отправления
+        # из каждой конечной точки. Получим эти две таблицы, чтобы было удобно
+        # с ними работать, и каждую таблицу передадим в функцию.
+        table_first, table_last = soup.find_all('table')
+        route.first_st_dep = self.__get_schedule__(table_first)
+        route.last_st_dep = self.__get_schedule__(table_last)
+        return route
