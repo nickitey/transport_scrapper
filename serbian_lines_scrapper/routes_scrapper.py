@@ -50,7 +50,7 @@ class BelgradRoute:
             sorted_departures = sorted(departures, key=lambda lst: len(lst))
             # И возьмем в качестве количества строк длину самого большого
             # списка
-            rows_amount = len(sorted_departures[0])
+            rows_amount = len(sorted_departures[-1])
             # Строка в csv-файле у нас будет состоять из каждого n-ного
             # элемента из каждого дня, для которого у нас есть время
             # отправления
@@ -67,7 +67,6 @@ class BelgradRoute:
                     except IndexError:
                         continue
                 writer.writerow(dep_list)
-            logging.info(f"Writing to {path} has been successfully completed")
 
 
 class RoutesScrapper(BelgradTrasnportCrawler):
@@ -76,7 +75,7 @@ class RoutesScrapper(BelgradTrasnportCrawler):
 
     def __get_schedule__(self, table_obj):
         # Для визуального удобства в заголовке таблицы первый и последний
-        # столбцы - это часы отправления, но нам он здесь не нужны.
+        # столбцы - это часы отправления, но нам они здесь не нужны.
         table_head_cells = table_obj.thead.find_all("th")[1:-1]
         # Поскольку у нас будет древовидная структура расписания,
         # отправления будут разбиты по дням недели, каждому дню недели
