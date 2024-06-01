@@ -1,3 +1,6 @@
+import csv
+import logging
+
 from main import BelgradTrasnportCrawler, MyBSException
 
 
@@ -23,6 +26,49 @@ class BelgradRoute:
         scrapped_data["last_station"]["departures"] = self.last_st_dep
         return scrapped_data
 
+    def get_station_csv(self, station, path):
+        lower_station = station.lower()
+        first_station_lower = self.first_station.lower()
+        last_station_lower = self.last_station.lower()
+        try:
+            assert lower_station in [first_station_lower, last_station_lower]
+        except AssertionError:
+            err_msg = "This station is not parsed yet or you made a typo."
+            raise MyBSException(err_msg)
+        if lower_station == first_station_lower:
+            proceeded_station = self.first_st_dep
+        else:
+            proceeded_station = self.last_st_dep
+        csv_headers = list(proceeded_station.keys())
+        with open(rf"{path}", "w") as output:
+            writer = csv.writer(output)
+            writer.writerow(csv_headers)
+            # Определим самый длинный список времени отправления на маршруте.
+            # Возьмем все списки отправлений транспорта из пункта
+            departures = list(proceeded_station.values())
+            # Отсортируем их по длине
+            sorted_departures = sorted(departures, key=lambda lst: len(lst))
+            # И возьмем в качестве количества строк длину самого большого
+            # списка
+            rows_amount = len(sorted_departures[0])
+            # Строка в csv-файле у нас будет состоять из каждого n-ного
+            # элемента из каждого дня, для которого у нас есть время
+            # отправления
+            for i in range(rows_amount):
+                dep_list = []
+                for key in proceeded_station:
+                    try:
+                        dep_list.append(proceeded_station[key][i])
+                    # Возникновение здесь ошибки IndexError обусловлено тем,
+                    # что у нас могут быть столбцы разной величины. Очевидно,
+                    # что в столбце отправлений транспорта в рабочие дни,
+                    # будет больше значений, потому что транспорт ходит чаще,
+                    # чем в выходные.
+                    except IndexError:
+                        continue
+                writer.writerow(dep_list)
+            logging.info(f"Writing to {path} has been successfully completed")
+
 
 class RoutesScrapper(BelgradTrasnportCrawler):
     def __init__(self, host, headers):
@@ -31,7 +77,7 @@ class RoutesScrapper(BelgradTrasnportCrawler):
     def __get_schedule__(self, table_obj):
         # Для визуального удобства в заголовке таблицы первый и последний
         # столбцы - это часы отправления, но нам он здесь не нужны.
-        table_head_cells = table_obj.thead.find_all('th')[1:-1]
+        table_head_cells = table_obj.thead.find_all("th")[1:-1]
         # Поскольку у нас будет древовидная структура расписания,
         # отправления будут разбиты по дням недели, каждому дню недели
         # будет соответствовать список времени отправления.
@@ -41,9 +87,9 @@ class RoutesScrapper(BelgradTrasnportCrawler):
         departure_keys = list(departure_days.keys())
         # Тело таблицы - это совокупность строк с минутами отправления.
         # Соберем эти строки, отсеяв лишние переносы между тегами
-        table_body = [tag
-                      for tag in table_obj.tbody.find_all('tr')
-                      if tag.text != '\n']
+        table_body = [
+            tag for tag in table_obj.tbody.find_all("tr") if tag.text != "\n"
+        ]
         # Для того, чтобы в нештатной ситуации у нас было понимание,
         # с какой строкой таблицы возникла проблема, введем счетчик строк
         table_row_count = 1
@@ -53,11 +99,11 @@ class RoutesScrapper(BelgradTrasnportCrawler):
             # неиндексируемый, поэтому превратим каждую строку
             # из совокупности ячеек во вполне конкретный список, заодно
             # убрав ячейку со служебной информацией (с атрибутом colspan)
-            td_tags = [td_tag
-                       for td_tag in tr_tag
-                       if td_tag.text != '\n'
-                       and 'colspan' not in td_tag.attrs
-                       ]
+            td_tags = [
+                td_tag
+                for td_tag in tr_tag
+                if td_tag.text != "\n" and "colspan" not in td_tag.attrs
+            ]
             # Практического смысла в отдельной переменной для range
             # никакого. Просто если дальше его вставлять в генератор
             # списка, то длина строки превысит численность Индии.
@@ -79,7 +125,7 @@ class RoutesScrapper(BelgradTrasnportCrawler):
                         # отправления из первого столбца к каждому
                         # значению минут.
                         lambda x: td_tags[0].text + ":" + x.strip(),
-                        td_tags[i].text.strip().split('\n')
+                        td_tags[i].text.strip().split("\n"),
                     )
                 )
                 for i in range_generator
@@ -97,10 +143,12 @@ class RoutesScrapper(BelgradTrasnportCrawler):
                 if len(departure_minutes) == 0:
                     continue
                 else:
-                    err_msg = ('Table row length doesn\'t match table '
-                               f'headers length. Problem with '
-                               f'#{table_row_count} row, here it is: '
-                               f'{departure_minutes}')
+                    err_msg = (
+                        "Table row length doesn't match table "
+                        f"headers length. Problem with "
+                        f"#{table_row_count} row, here it is: "
+                        f"{departure_minutes}"
+                    )
                     raise MyBSException(err_msg)
             # Соберем теперь все получившиеся данные в один объект.
             for i in range(len(departure_keys)):
@@ -113,9 +161,10 @@ class RoutesScrapper(BelgradTrasnportCrawler):
         route = BelgradRoute()
         soup = self.get_bs_object(path=link)
         route_name = soup.h1.get_text(strip=True)
-        h2_headers = soup.find_all('h2')
-        description, first_station, dbl_description, last_station = (
-            map(lambda tag: tag.get_text(strip=True), h2_headers))
+        h2_headers = soup.find_all("h2")
+        description, first_station, dbl_description, last_station = map(
+            lambda tag: tag.get_text(strip=True), h2_headers
+        )
         route.route_name = route_name
         route.description = description
         route.first_station = first_station
@@ -124,7 +173,7 @@ class RoutesScrapper(BelgradTrasnportCrawler):
         # На странице находятся две таблицы: по одной со временем отправления
         # из каждой конечной точки. Получим эти две таблицы, чтобы было удобно
         # с ними работать, и каждую таблицу передадим в функцию.
-        table_first, table_last = soup.find_all('table')
+        table_first, table_last = soup.find_all("table")
         route.first_st_dep = self.__get_schedule__(table_first)
         route.last_st_dep = self.__get_schedule__(table_last)
         return route
