@@ -64,8 +64,12 @@ class BelgradTrasnportCrawler(requests.Session):
         parser="html.parser",
         **kwargs,
     ):
-        if (path is None and html is None
-                or path is not None and html is not None):
+        if (
+            path is None
+            and html is None
+            or path is not None
+            and html is not None
+        ):
             raise MyBSException(
                 "You should pass either path or html "
                 "which will be used to prepare your soup."
@@ -108,12 +112,12 @@ class BelgradTrasnportCrawler(requests.Session):
         return self.make_request("POST", url, data=form)
 
     def collect_links_to_crawl(
-            self,
-            path,
-            content_tag=True,
-            attr=None,
-            value=None,
-            clear_from_pdf=False,
+        self,
+        path,
+        content_tag=True,
+        attr=None,
+        value=None,
+        clear_from_pdf=True,
     ):
         page_to_parse = self.get_bs_object(path=path)
         search_tag_attribute = None

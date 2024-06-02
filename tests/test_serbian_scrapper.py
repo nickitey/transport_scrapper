@@ -1,5 +1,7 @@
 import csv
 import logging
+import os
+import random
 import sys
 
 sys.path.insert(1, "../serbian_lines_scrapper")
@@ -18,7 +20,6 @@ logging.basicConfig(
     encoding="utf-8",
     level=logging.INFO,
 )
-
 
 headers = {
     "Accept": "text/html,application/xhtml+xml,"
@@ -49,7 +50,7 @@ def test_language_change():
     print("Test #1 passed. Correct letters are used.")
 
 
-def test_list_collector():
+def test_links_collector():
     start_path = "/linije/red-voznje"
     with open(r"pdf_traces.txt", "r") as pdf_list:
         pdf_routes = set(pdf_list.read().split("\n"))
@@ -62,7 +63,9 @@ def test_list_collector():
     crawler = BelgradTrasnportCrawler(base_url, headers=headers)
     crawler.change_to_latin()
 
-    dirty_links = crawler.collect_links_to_crawl(start_path, "option")
+    dirty_links = crawler.collect_links_to_crawl(
+        start_path, "option", clear_from_pdf=False
+    )
     assert dirty_links == whole_test_routes
 
     clean_links = crawler.collect_links_to_crawl(
@@ -101,7 +104,11 @@ def test_route_scrapper():
     parsed_route.get_station_csv("Spoljašnji Krug", "test_station.csv")
     with open("test_station.csv", "r") as r:
         reader = csv.reader(r)
-        assert ["Radni dan", "Subota", "Nedelja"] == next(reader)
+        first_string = next(reader)
+        assert ["Spoljašnji Krug"] == first_string
+        second_string_empty = next(reader)
+        third_string = next(reader)
+        assert ["Radni dan", "Subota", "Nedelja"] == third_string
         lines_in_csv = []
         for line in reader:
             lines_in_csv.append(line)
@@ -111,3 +118,120 @@ def test_route_scrapper():
         assert ["23:50"] in lines_in_csv
 
         print("Test #3 passed. Route parsed and wrote to file correctly.")
+
+
+def test_wrapper():
+    crawler = RoutesScrapper(base_url, headers)
+    crawler.change_to_latin()
+
+    # План изначально был каков: задаем начальное состояние генератора,
+    # получаем один и тот же набор случайных чисел, используем их
+    # в качестве индексов из общего списка собранных ссылок,
+    # проводим одни и те же манипуляции, получаем предсказуемый результат.
+
+    # Фиаско заключается в том, что метод collect_links_to_crawl() собирает
+    # и возвращает множество ссылок. Поэтому даже при конвертации в список
+    # элементы находятся в нем при каждом запуске в произвольном порядке.
+    # Поэтому предлагается мне поверить, что краулер собирает и проходит 450
+    # ссылок без ошибок и проблем.
+
+    # random.seed(5)
+    # links = list(crawler.collect_links_to_crawl('/linije/red-voznje', 'option'))
+    # indices = [random.randint(0, len(links)) for i in range(10)]
+    # lim_links = [links[i] for i in indices]
+
+    test_links = [
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/60192/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/60314/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/10021/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/60243/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/60249/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/23/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/60260/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/18/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/400/prikaz",
+        "https://www.bgprevoz.rs/linije/red-voznje/linija/60271/prikaz",
+    ]
+
+    result = crawler.parse_all_routes(direct_links=test_links)
+    result_iterator = iter(result)
+    first = next(result_iterator)
+    assert (
+        "Sopot - Sibnica groblje - Mirosaljci - Junkovac" == first.description
+    )
+    assert "13:20" in first.first_st_dep["Radni dan"]
+    assert "14:10" in first.last_st_dep["Radni dan"]
+
+    second = next(result_iterator)
+    assert "Beograd - Stojnik" == second.description
+    assert "19:25" in second.first_st_dep["Radni dan"]
+    assert "17:25" in second.first_st_dep["Subota"]
+
+    third = next(result_iterator)
+    assert "Trg Slavija - Učiteljsko naselje" == third.description
+    assert "06:01" in third.first_st_dep["Radni dan"]
+    assert "06:15" in third.first_st_dep["Subota"]
+    assert "23:30" in third.first_st_dep["Nedelja"]
+    assert "04:40" in third.last_st_dep["Radni dan"]
+    assert "05:15" in third.last_st_dep["Subota"]
+    assert "21:22" in third.last_st_dep["Nedelja"]
+
+    fourth = next(result_iterator)
+    fifth = next(result_iterator)
+    sixth = next(result_iterator)
+    seventh = next(result_iterator)
+    assert "Beograd - Mladenovac (autoputem)" == seventh.description
+    assert "04:45" in seventh.first_st_dep["Radni dan"]
+    assert "08:00" in seventh.first_st_dep["Subota"]
+    assert "19:50" in seventh.first_st_dep["Nedelja"]
+    assert "04:00" in seventh.last_st_dep["Radni dan"]
+    assert "19:40" in seventh.last_st_dep["Nedelja"]
+
+    eighth = next(result_iterator)
+    nineth = next(result_iterator)
+    tenth = next(result_iterator)
+    assert "Beograd - Lazarevac (Dom zdravlja)" == tenth.description
+    assert "05:30" in tenth.first_st_dep["Radni dan"]
+    assert "11:30" in tenth.first_st_dep["Subota"]
+    assert "11:30" in tenth.first_st_dep["Nedelja"]
+    assert "19:10" in tenth.last_st_dep["Radni dan"]
+    assert "13:15" in tenth.last_st_dep["Nedelja"]
+
+    for item in result:
+        item.get_route_csv(f"{item.description}.csv")
+
+    generator = os.walk("./")
+    csvs = next(generator)[2]
+    assert "Sopot - Sibnica groblje - Mirosaljci - Junkovac.csv" in csvs
+    assert "Beograd - Mali Popović - Mala Ivanča (autoputem).csv" in csvs
+    assert "Sopot (Stanojevac) - Beograd (Autoputem).csv" in csvs
+    assert "Karaburma 2 - Vidikovac.csv" in csvs
+    assert "Medaković 3 - Zemun Bačka.csv" in csvs
+    assert "Voždovac - Vrh Avale.csv" in csvs
+
+    with open(r"Trg Slavija - Učiteljsko naselje.csv", "r") as output:
+        reader = csv.reader(output)
+        first_string = next(reader)
+        assert "Trg Slavija" in first_string
+        test_status1 = False
+        test_status2 = False
+        for string in reader:
+            if ["15:38", "22:15", "22:15"] == string:
+                test_status1 = True
+            elif ["16:13", "23:10", "23:10"] == string:
+                test_status2 = True
+        assert test_status1 and test_status2
+
+    with open(r"Sopot (Stanojevac) - Beograd (Autoputem).csv", "r") as output:
+        reader = csv.reader(output)
+        first_string = next(reader)
+        assert "Sopot (Stanojevac)" in first_string
+        test_status1 = False
+        test_status2 = False
+        for string in reader:
+            if ["06:30", "09:40", "09:40"] == string:
+                test_status1 = True
+            elif ["22:10"] == string:
+                test_status2 = True
+        assert test_status1 and test_status2
+        print("Test #4 passed. Crawler works.")

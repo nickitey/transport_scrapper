@@ -12,6 +12,7 @@ class BelgradRoute:
         self.last_station = None
         self.first_st_dep = None
         self.last_st_dep = None
+        self.stations = []
 
     def get_dict(self):
         scrapped_data = {
@@ -26,22 +27,25 @@ class BelgradRoute:
         scrapped_data["last_station"]["departures"] = self.last_st_dep
         return scrapped_data
 
-    def get_station_csv(self, station, path):
+    def get_station_csv(self, station, path, mode="w"):
         lower_station = station.lower()
-        first_station_lower = self.first_station.lower()
-        last_station_lower = self.last_station.lower()
+        route_stations = [
+            station.lower() for station in self.stations if station is not None
+        ]
         try:
-            assert lower_station in [first_station_lower, last_station_lower]
+            assert lower_station in route_stations
         except AssertionError:
             err_msg = "This station is not parsed yet or you made a typo."
+            logging.exception(err_msg)
             raise MyBSException(err_msg)
-        if lower_station == first_station_lower:
+        if lower_station == route_stations[0]:
             proceeded_station = self.first_st_dep
         else:
             proceeded_station = self.last_st_dep
         csv_headers = list(proceeded_station.keys())
-        with open(rf"{path}", "w") as output:
+        with open(rf"{path}", mode) as output:
             writer = csv.writer(output)
+            output.write(station + "\n\n")
             writer.writerow(csv_headers)
             # Определим самый длинный список времени отправления на маршруте.
             # Возьмем все списки отправлений транспорта из пункта
@@ -67,6 +71,17 @@ class BelgradRoute:
                     except IndexError:
                         continue
                 writer.writerow(dep_list)
+            output.write("\n")
+
+    def get_route_csv(self, path):
+        stations_to_csv = [
+            station for station in self.stations if station is not None
+        ]
+        for station in stations_to_csv:
+            self.get_station_csv(station, path, "a")
+            msg = f"Writing to {path} has successfully completed."
+            logging.info(msg)
+            print(msg)
 
 
 class RoutesScrapper(BelgradTrasnportCrawler):
@@ -120,7 +135,7 @@ class RoutesScrapper(BelgradTrasnportCrawler):
             td_tags = []
             for td_tag in tr_tag:
                 try:
-                    if "colspan" not in td_tag.attrs:
+                    if "colspan" in td_tag.attrs:
                         continue
                 except AttributeError:
                     continue
@@ -191,6 +206,7 @@ class RoutesScrapper(BelgradTrasnportCrawler):
                         f"#{table_row_count} row, here it is: "
                         f"{departure_minutes}"
                     )
+                    logging.exception(err_msg)
                     raise MyBSException(err_msg)
             # Соберем теперь все получившиеся данные в один объект.
             for i in range(len(departure_keys)):
@@ -206,18 +222,22 @@ class RoutesScrapper(BelgradTrasnportCrawler):
         h2_headers = soup.find_all("h2")
         if len(h2_headers) == 2:
             description, first_station = map(
-                lambda tag: tag.get_text(strip=True), h2_headers
+                lambda tag: tag.get_text(strip=True).replace("/", ""),
+                h2_headers,
             )
+            route.stations.append(first_station.replace("/", ""))
 
         else:
             description, first_station, dbl_description, last_station = map(
-                lambda tag: tag.get_text(strip=True), h2_headers
+                lambda tag: tag.get_text(strip=True).replace("/", ""),
+                h2_headers,
             )
             route.last_station = last_station
+            route.first_station = first_station
+            route.stations.extend([first_station, last_station])
 
         route.route_name = route_name
         route.description = description
-        route.first_station = first_station
 
         # На странице находятся две таблицы: по одной со временем отправления
         # из каждой конечной точки. Получим эти две таблицы, чтобы было удобно
@@ -232,19 +252,31 @@ class RoutesScrapper(BelgradTrasnportCrawler):
             route.last_st_dep = self.__get_schedule__(table_last)
         return route
 
-    def parse_all_routes(self, path, clear_from_pdf):
-        links_to_crawl = self.collect_links_to_crawl(
-            path, "option", clear_from_pdf=clear_from_pdf
-        )
+    def parse_all_routes(
+        self, path=None, direct_links=None, clear_from_pdf=True
+    ):
+        if path is None and direct_links is None:
+            err_msg = "None of sources to parse has given."
+            logging.exception(err_msg)
+            raise MyBSException(err_msg)
+        elif direct_links is None:
+            links_to_crawl = self.collect_links_to_crawl(
+                path, "option", clear_from_pdf=clear_from_pdf
+            )
+        else:
+            links_to_crawl = direct_links
         parsed_objects = []
         counter = len(links_to_crawl)
         for link in links_to_crawl:
-            print(f"Перехожу к ссылке {link}. Осталось {counter - 1} ссылок.")
+            msg = f"Перехожу к ссылке {link}. Осталось {counter - 1} ссылок."
+            logging.info(msg)
+            print(msg)
             try:
                 parsed_objects.append(self.parse_route(link))
             except Exception as e:
                 msg = f"Problem with link {link}. "
-                raise MyBSException(msg + str(e))
+                logging.exception(msg + f"Exception message: {e}")
+                continue
             finally:
                 counter -= 1
         return parsed_objects
