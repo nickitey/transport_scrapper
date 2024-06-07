@@ -1,0 +1,10 @@
+https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css
+https://unpkg.com/leaflet@1.7.1/dist/leaflet.css
+https://www.bgprevoz.rs/css/app.css
+https://www.bgprevoz.rs/css/rezimske-izmene-admin-responsive.css
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+https://www.bgprevoz.rs/css/select2.min.css
+https://www.bgprevoz.rs/css/fontello.css
+https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@400;700&display=swap
+https://www.bgprevoz.rs/css/web.css
+https://fonts.googleapis.com/icon?family=Material+Icons

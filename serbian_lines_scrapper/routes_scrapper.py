@@ -1,7 +1,7 @@
 import csv
 import logging
 
-from main import BelgradTrasnportCrawler, MyBSException
+from serbian_lines_scrapper.main import BelgradTrasnportCrawler, MyBSException
 
 
 class BelgradRoute:
