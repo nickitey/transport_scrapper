@@ -1,0 +1,1567 @@
+{% extends 'base.html' %}
+{% block container %}
+<main class="flex-1 bg-white" id="main-wrapper">
+
+            <div class="max-w-6xl mx-auto pt-8">
+        <h1 class="mb-14 text-2xl uppercase md:text-3xl text-center text-brand-blue">
+        Red vožnje
+        <div class="max-w-6xl mx-auto block relative mt-2">
+            <span style="width: 25%; height: 4px;" class="absolute left-1/2 transform -translate-x-1/2 bg-gray-300 rounded-xl"></span>
+            <span style="width: 4%; height: 8px; transform: translate(-50%, -2px)" class="absolute left-1/2 bg-[rgb(32,64,154)] rounded-xl"></span>
+        </div>
+    </h1>
+    </div>
+<div class="w-full text-black my-2 h-full px-2 sm:px-4 md:px-8 xl:px-48">
+    <div class="pb-14 bg-white w-full" id="custom-bg">
+<link rel="stylesheet" href="{{ url_for('static', filename='select2.min.css') }}">
+<style>
+
+    .select2-selection__rendered {
+        line-height: 45px !important;
+    }
+    .select2-container .select2-selection--single {
+        height: 45px !important;
+        border-radius: 10px !important;
+    }
+    .select2-selection__arrow {
+        height: 45px !important;
+    }
+
+    .select2-selection__clear{
+        display: none;
+    }
+
+</style>
+<div class="px-2 md:px-4 xl:px-8">
+    <div class="input-container w-full md:w-1/2">
+        <select name="linja" id="linija" onchange="window.location = this.value;" class="linije-select shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 w-full block border-gray-300 rounded-md select2-hidden-accessible" data-select2-id="select2-data-linija" tabindex="-1" aria-hidden="true">
+            <option value="" data-select2-id="select2-data-2-t69v">Izaberite liniju</option>
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/2/prikaz ">2 [Unutrašnji Krug - Spoljašnji Krug]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/5/prikaz ">5 [Kalemegdan /Donji grad/ - Ustanička]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/6/prikaz ">6 [Tašmajdan - Ustanička]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/7/prikaz ">7 [Ustanička - Blok 45]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/9/prikaz ">9 [Banjica - Blok 45]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10/prikaz ">10 [Kalemegdan /Donji grad/ - Banjica ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/11/prikaz ">11 [Kalemegdan /Donji grad/ - Blok 45]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/12/prikaz ">12 [Omladinski stadion - Banovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/13/prikaz ">13 [Banovo brdo - Blok 45]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/14/prikaz ">14 [Ustanička - Banjica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/15/prikaz ">15 [Zeleni venac - Zemun /Novi grad/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/16/prikaz ">16 [Karaburma 2 - Novi Beograd /Paviljoni/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/17/prikaz ">17 [Konjarnik - Zemun /Gornji grad/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/18/prikaz ">18 [Medaković 3 - Zemun /Bačka/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/19/prikaz ">19 [Trg Slavija - Konjarnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20/prikaz ">20 [Mirijevo 3 - Veliki Mokri lug]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/22/prikaz ">22 [Trg Slavija - Kruševačka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/23/prikaz ">23 [Karaburma 2 - Vidikovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/24/prikaz ">24 [Dorćol /SRC Milan Gale Muškatirović/ - Neimar]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/25/prikaz ">25 [Karaburma 2 - Kumodraž 2]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/26/prikaz ">26 [Dorćol /Dunavska/ - Naselje Braće Jerković]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/27/prikaz ">27 [Trg Republike - Mirijevo 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/28/prikaz ">28 [Studentski Trg - Zvezdara]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/29/prikaz ">29 [Studentski Trg - Medaković 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/30/prikaz ">30 [Birčaninova - Medaković 2]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/31/prikaz ">31 [Studentski trg - Konjarnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/32/prikaz ">32 [Vukov spomenik - Višnjica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/33/prikaz ">33 [ŽC Pančevački most - Kumodraž]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/34/prikaz ">34 [Topčidersko brdo (Senjak) - Pere Velimirovića]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/35/prikaz ">35 [Novi Beograd (Blok 20) - Lešće /groblje/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/36 15.03.2022_zvezdice.pdf ">36 [Ž.Ct. Bgd (Centar) - Ž.Ct. Bgd (Centar)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/37/prikaz ">37 [Železnička stanica Pančevački most - Kneževac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/38/prikaz ">38 [Šumice - Pogon Kosmaj - Veliki Mokri lug]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/39/prikaz ">39 [Birčaninova - Kumodraž 1]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/40/prikaz ">40 [Zvezdara - Banjica 2]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/41/prikaz ">41 [Studentski Trg - Banjica 2]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/42/prikaz ">42 [Birčaninova - Petlovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/43/prikaz ">43 [Trg Republike - Kotež]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/44/prikaz ">44 [Topčidersko brdo /Cenjak/ - Železnička stanica Dunav]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/45/prikaz ">45 [Blok 44 - Zemun /Novi grad/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/46/prikaz ">46 [Beograd na vodi - Mirijevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/47/prikaz ">47 [Birčaninova - Železnička stanica Resnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/48/prikaz ">48 [Železnička stanica Pančevački most - Miljakovac 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/49/prikaz ">49 [Banovo brdo - Naselje Stepa Stepanović]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50/prikaz ">50 [Ustanička - Banovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/51/prikaz ">51 [Beograd na vodi - Bele Vode]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/52/prikaz ">52 [Zeleni Venac - Cerak Vinogradi]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/53/prikaz ">53 [Zeleni Venac - Vidikovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/54/prikaz ">54 [Miljakovac 1 - MZ Makiš]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/55/prikaz ">55 [Zvezdara - Stari Železnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/56/prikaz ">56 [Zeleni Venac - Petlovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_57.pdf ">57 [Banovo Brdo - Naselje GOLF - Banovo Brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/58/prikaz ">58 [Železnička stanica Pančevački most - Novi Železnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/59/prikaz ">59 [Slavija/Birčaninova - Petlovo brdo ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60/prikaz ">60 [Zeleni Venac - Novi Beograd /Toplana/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/64/prikaz ">64 [Zvezdara (Zeleno brdo) - Šumice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/65/prikaz ">65 [Zvezdara 2 - Novo Bežanijsko Groblje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/66/prikaz ">66 [Vukov spomenik - Naučno-težnološki park Zvezdar]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/67/prikaz ">67 [Zeleni Venac - Novi Beograd /Blok 70A/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/68/prikaz ">68 [Zeleni Venac - Novi Beograd /Blok 70/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/70/prikaz ">70 [Bežanijska kosa - IKEA]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/71/prikaz ">71 [Zeleni Venac - Bežanija /Ledine/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/72/prikaz ">72 [Zeleni Venac - Aerodrom Nikola Tesla]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/73/prikaz ">73 [Novi Beograd/Blok 45/ - Batajnica /Železnička Stanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/74/prikaz ">74 [Bežanijska Kosa - Mirijevo 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/75/prikaz ">75 [Zeleni Venac - Bežanijska Kosa]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/76/prikaz ">76 [Novi Beograd /Blok 70A/ - Bežanijska Kosa/Bolnica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/77/prikaz ">77 [Zvezdara - Bežanijska Kosa /Bolnica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/78/prikaz ">78 [Banjica 2 - Zemun /Novi Grad/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/79/prikaz ">79 [Dorćol /SRC Milan Gale Muškatirović/ - Mirijevo 4]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/81/prikaz ">81 [Novi Beograd/Paviljoni/ - Altina1]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/82/prikaz ">82 [Zemun /Kej Oslobođenja/ - Blok 44]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/83/prikaz ">83 [Crveni Krst - Zemun /Bačka/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/84/prikaz ">84 [Zeleni Venac - Nova Galenika]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/85/prikaz ">85 [Banovo brdo - Borča 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/87/prikaz ">87 [Čukarička padina - Banovo Brdo - Čukarička Padina]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/88/prikaz ">88 [Zemun /Kej Oslobođenja/ - Novi Železnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/89/prikaz ">89 [Vidikovac - Novi Beograd /Blok 72/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/91/prikaz ">91 [Beograd na vodi - Ostružnica /Novo Naselje/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/92/prikaz ">92 [Beograd na vodi - Ostružnica /Karaula/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/94/prikaz ">94 [Novi Beograd /Blok 45/ - Resnik /Edvarda Griga/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/95/prikaz ">95 [Novi Beograd /Blok 45/ - Borča 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/96/prikaz ">96 [ŽC Pančevački most - Borča 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/101/prikaz ">101 [Omladinski Stadion - Padinska Skela ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/102/prikaz ">102 [Padinska Skela - Vrbovski/Široka greda/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/104/prikaz ">104 [Omladinski Stadion - Crvenka ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/105/prikaz ">105 [Omladinski Stadion - Ovča /Železnička Stanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/106/prikaz ">106 [Omladinski Stadion - Jabučki Rit]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/107/prikaz ">107 [Padinska Skela - Dunavac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/108/prikaz ">108 [Omladinski Stadion - Reva /Duboka Bara/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/109/prikaz ">109 [Padinska Skela - Stajalište Put za Dunavac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/110/prikaz ">110 [Padinska skela - Put za Vrbovski]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/111/prikaz ">111 [Omladinski stadion - SC Kovilovo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/202/prikaz ">202 [Omladinski Stadion - Veliko Selo ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/302/prikaz ">302 [Ustanička - Begaljica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/303/prikaz ">303 [Ustanička - Vrčin]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/304/prikaz ">304 [Ustanička - Ritopek]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/305/prikaz ">305 [Ustanička - Boleč]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/306/prikaz ">306 [Ustanička - Leštane]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/307/prikaz ">307 [Ustanička - Vinča]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/308/prikaz ">308 [Šumice - Veliki Mokri lug]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/309/prikaz ">309 [Zvezdara /Pijaca/ - Kaluđerica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/310/prikaz ">310 [Šumice - Mali mokri lug]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/311/prikaz ">311 [Ustanička - Leštane (Ravan)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/312/prikaz ">312 [MZ Veliki mokri lug - Kumodraž - MZ Veliki mokri lug]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/400/prikaz ">400 [Voždovac - Vrh Avale]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/401/prikaz ">401 [Slavija /Birčaninova/ - Pinosava]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/402/prikaz ">402 [Slavija /Birčaninova/ - Beli potok]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/403/prikaz ">403 [Voždovac - Zuce]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/404/prikaz ">404 [Bela reka - Trešnja /okretnica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/405/prikaz ">405 [Voždovac - Glumčevo Brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/406/prikaz ">406 [Voždovac - Institut]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/407/prikaz ">407 [Voždovac - Bela Reka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/408/prikaz ">408 [Voždovac - Ralja /Drumine/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/409/prikaz ">409 [Voždovac-Jajinci-Ulica Ruža - Voždovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/501/prikaz ">501 [Staro Kijevo - Petlovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/502/prikaz ">502 [Miljakovac 1 - ORLOVAČA /GROBLjE/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/503/prikaz ">503 [Voždovac - Resnik/Železnička Stanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/504/prikaz ">504 [Vidikovac - Resnik /Železnička Stanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_506 (5).pdf ">506 [Miljakovac 1 - Resnik (Patin majdan)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/507/prikaz ">507 [Kneževac - Rušanj (Drobnjački kraj)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/511/prikaz ">511 [Beograd na vodi - Sremčica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/512/prikaz ">512 [Banovo Brdo - Sremčica /Naselje Gorica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/513/prikaz ">513 [Cremčica /Naselje Gorica/ - Velika Moštanica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/521/prikaz ">521 [Vidikovac - Železnik /Taraiš/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/531/prikaz ">531 [Banovo Brdo - Rušanj /13. septembra/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/532/prikaz ">532 [Banovo Brdo - Rušanj /Oslobođenja/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/533/prikaz ">533 [Banovo Brdo - Orlovača /Groblje/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/534/prikaz ">534 [Cerak Vinogradi - Ripanj /groblje/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/551/prikaz ">551 [Beograd na vodi - Sremčica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/553/prikaz ">553 [Beograd na vodi - Rucka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/600 od 06.11.2023.pdf ">600 [Železnička stanica Beograd (centar) - Aerodrom Nikola Tesla]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/601/prikaz ">601 [Beograd na vodi - Surčin]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/602/prikaz ">602 [Blok 44 - SRC Surčin]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/603/prikaz ">603 [Bežanija/Ledine/ - Ugrinovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/604/prikaz ">604 [Novi Beograd /Blok 45/ - Preka Kaldrma]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/605/prikaz ">605 [Novi Beograd /Blok 45/ - Progar]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/606/prikaz ">606 [Surčin - Grmovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/607/prikaz ">607 [Banovo Brdo - Aerodrom Nikola Tesla]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/610/prikaz ">610 [Zemun /Kej Oslobođenja/ - Jakovo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/611/prikaz ">611 [Zemun /Kej Oslobođenja/ - Dobanovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/612/prikaz ">612 [Novi Beograd /Paviljoni/ - Nova Galenika]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/613/prikaz ">613 [Novi Beograd /Paviljoni/ - Radiofar]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/700/prikaz ">700 [Batajnica /Železnička Stanica/ - Batajnica /Železnička Stanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/702/prikaz ">702 [Batajnica /Železnička Stanica/ - Busije /Crkva/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/703/prikaz ">703 [Zemun /Kej osl. /Batajn. /Ž C/ - Ugrinovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/704/prikaz ">704 [Zeleni Venac - Zemun Polje ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/705/prikaz ">705 [Zemun / Kej Oslobođenja - 13 Maj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/706/prikaz ">706 [Zeleni Venac - Batajnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/707/prikaz ">707 [Zeleni Venac - Zemun Polje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/708/prikaz ">708 [Novi Beograd /Blok 70A/ - Zemun Polje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/709/prikaz ">709 [Zemun /Novi Grad/ - Zemun Polje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/711/prikaz ">711 [Novi Beograd/Paviljoni/ - Ugrinovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/10.12.2023 БГ ВОЗ 2023-2024-polasci na relaciji Batajnica - Ovča.pdf ">100 [Batajnica - Ovča]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/715/prikaz ">522 [Novi Železnik - Milorada Ćirića - Novi Železnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/10.12.2023 БГ ВОЗ 2023-2024-polasci na relaciji Resnik-Ovca.pdf ">100P [Resnik - Ovča]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/10.12.2023 БГ ВОЗ 2023-2024-polasci na relaciji Zemun-Resnik-Lazarevac-Mladenovac.pdf ">100C [Lazarevac - Ovča]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/10.12.2023 БГ ВОЗ 2023-2024-polasci na relaciji Zemun-Resnik-Lazarevac-Mladenovac.pdf ">100D [Mladenovac - Ovča]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/10.12.2023 БГ ВОЗ 2023-2024-polasci na relaciji Zemun-Resnik-Lazarevac-Mladenovac.pdf ">100F [Resnik - Zemun]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/1009/prikaz ">9Л [Banjica - Pogon "Sava"]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10003/prikaz ">3A [Beograd na vodi - Kneževac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10021/prikaz ">21A [Trg Slavija - Učiteljsko naselje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10025/prikaz ">25P [Mirijevo 4 - Kumodraž /Stepina kuća/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10027/prikaz ">27E [Novi Beograd (Blok 20) - Mirijevo 4]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10032/prikaz ">32E [Trg Republike - Višnjica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10038/prikaz ">38L [Pogon Kosmaj - Ž.St. Bgd (Centar)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10056/prikaz ">56L [Zeleni Venac - Čukarička Padina]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10081/prikaz ">81L [Novi Beograd /Paviljoni/ - Altina1]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10087/prikaz ">87A [Čukarička padina (Banovo brdo) - Čukarička Padina]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10105/prikaz ">105L [Borča 3 - Ovča /Železnička Ctanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10309/prikaz ">309L [Kaluđerica (Put za institut) - Kaluđerica ((Višnjićeva)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10405/prikaz ">405L [Glumčevo brdo - Nenadovac - Karalula - Barajevo - Karaula - Glumčevo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10505/prikaz ">505 [Miljakovac 1 - Miljakovačke livade]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10610/prikaz ">610e [Novi Beograd /Blok 70A/ - Jakovo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10706/prikaz ">706E [Zemun /Kej Oslobođenja/ - Aerodrom Batajnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/10709/prikaz ">709L [Zemun /Novi Grad/ - Železnička st. „Zemun polje“]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20001/prikaz ">7Л [Ustanička - Pogon "Sava"]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20026/prikaz ">26L [Medaković 3 - Vojvode Vlahovića /terminus/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20038/prikaz ">38L1 [Šumice - Pogon "Kosmaj"]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20060/prikaz ">60L [Zeleni Venac - Novi Beograd /Toplana/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20406/prikaz ">406L [Voždovac - Zemljoradnička - Beli potok /Igralište/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/20407/prikaz ">407L [Bela reka - Trebež (okretnica)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/21011/prikaz ">11Л [Kalemegdan (Donji grad) - Pogon "Sava"]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/40101/prikaz ">EKO1 [Vukov spomenik - Naselje Belvil]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/40102/prikaz ">EKO2 [SRC Milan Gale Muškatirović - Beograd Na Vodi]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50015/prikaz ">15Н [Trg Republike - Zemun/Novi Grad/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50026/prikaz ">26Н [Dorćol/Dunavska/ - Braće Jerković]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50027/prikaz ">27Н [Trg Republike - Mirijevo 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50029/prikaz ">29Н [Studentski Trg - Medaković 3]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50031/prikaz ">31Н [Studentski Trg - Konjarnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50032/prikaz ">32Н [Trg Republike - Višnjica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50033/prikaz ">33Н [Studentski Trg - Kumodraž]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50037/prikaz ">37Н [Trg Republike - Kneževac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50047/prikaz ">47Н [Trg Republike - Resnik /Železnička Stanica/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50051/prikaz ">51Н [Trg Republike - Bele Vode]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50056/prikaz ">56Н [Trg Republike - Rušanj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50068/prikaz ">68Н [Trg Republike - Novi Beograd /Blok 45/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50075/prikaz ">75Н [Trg Republike - Bežanijska Kosa]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50101/prikaz ">101Н [Trg Republike - Padinska Skela]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50202/prikaz ">202Н [Trg Republike - Veliko Selo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50301/prikaz ">301Н [Trg Republike - Begaljica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50304/prikaz ">304Н [Trg Republike - Ritopek]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50401/prikaz ">401Н [Dorćol/Dunavska/ - Pinosava]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50511/prikaz ">511Н [Trg Republike - Sremčica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50601/prikaz ">601Н [Trg Slavija - Dobanovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50603/prikaz ">603Н [Trg Republike - Dobanovci - Ugrinovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50704/prikaz ">704Н [Trg Republike - Zemun Polje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/50706/prikaz ">706Н [Trg Republike - Batajnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60000/prikaz ">150л [Lazarevac - Dudovica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60001/prikaz ">150 [Lazarevac - Dudovica - Marinac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60002/prikaz ">139л [Lazarevac - Petka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60003/prikaz ">141л [Lazarevac - Zavod - Rudovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60005/prikaz ">166 [Lazarevac - Zavod - Kruševica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60006/prikaz ">133л [Vrbovno - Leskovac - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60007/prikaz ">133 [Lazarevac - Leskovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60008/prikaz ">140 [Lazarevac - Vrbovno - Leskovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60009/prikaz ">140л [Lazarevac - Vrbovno]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60010/prikaz ">130 [Lazarevac - Mirosaljci - Gunjevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60011/prikaz ">130а [Lazarevac - Arapovac - Mirosaljci - Gunjevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60012/prikaz ">135 [Lazarevac - Sokolovo - Arnajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60014/prikaz ">136а [Veliki Crljeni - Arnajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60017/prikaz ">160а [Lazarevac - Zavod - Prkosava - Strmovo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60018/prikaz ">162 [Lazarevac - Bistrica - Rudovci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60019/prikaz ">162а [Lazarevac - Bistrica - Kruševica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60020/prikaz ">165 [Lazarevac - Dren]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60021/prikaz ">167 [Lazarevac - Lukavica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60024/prikaz ">171 [Lazarevac - Burovo - Zeoke]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60025/prikaz ">173 [Lazarevac - Rudovci - Strmovo - Baroševac (montaža)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60028/prikaz ">180 [Lazarevac - Brajkovac - Dudovica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60029/prikaz ">180а [Lazarevac - Brajkovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60030/prikaz ">190ц [Sumeđ - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60034/prikaz ">901 [Belo polje - Zabrežje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60038/prikaz ">911 [Bora Kečić - Mladost]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60039/prikaz ">911а [Bora Kečić - TENT A - Mladost]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60040/prikaz ">912а [TENT A - Valjevskim putem - Zvečka (Čede Todorovića) - Šabačkim putem - TENT A]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60042/prikaz ">912а1 [OŠ J.J.Zmaj - Šabačkim putem - TENT A]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60043/prikaz ">912б [Gaj - Rojkovac - Šabačkim putem - Zvečka (Čede Todorovića)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60045/prikaz ">912 [GAJ - Naselje Sava - Rojkovac - Zvečka (Čede Todorovića)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60047/prikaz ">921 [Obrenovac - Zvečka (Čede Todorovića)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60048/prikaz ">922 [Obrenovac - Ratari]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60049/prikaz ">923 [Obrenovac - Skela]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60052/prikaz ">932 [Obrenovac - Jasenak (Šumadija) - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60054/prikaz ">934 [Obrenovac - Baljevac (Ibarska Magistrala)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60056/prikaz ">935 [Obrenovac - Konatice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60057/prikaz ">936 [Obrenovac - Baljevac - Konatice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60058/prikaz ">937 [Obrenovac - Jasenak - Baljevac - Konatice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60059/prikaz ">938 [Obrenovac - Jasenak - Konatice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60060/prikaz ">939 [Obrenovac - Jasenak - Baljevac (Ibarska Magistrala)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60061/prikaz ">939a [Obrenovac - Jasenak - Baljevac (Ibarska Magistrala)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60062/prikaz ">940 [Obrenovac - Stepojevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60064/prikaz ">946 [Lazarevac - Poljane - Stubline - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60065/prikaz ">951 [Obrenovac - Veliko polje (Gornji kraj)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60066/prikaz ">951a [Obrenovac - Veliko polje (Stamenića kraj)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60067/prikaz ">952a [Obrenovac - Veliko polje - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60068/prikaz ">953a [Obrenovac - Stubline - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60069/prikaz ">953 [Obrenovac - Poljane]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60070/prikaz ">954 [Obrenovac - Piroman]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60071/prikaz ">954а [Piroman - Zvečka - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60073/prikaz ">958 [Obrenovac - Trstenica (oba kraja) - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60074/prikaz ">959 [Obrenovac - Brović]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60077/prikaz ">960 [Obrenovac - Piroman]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60083/prikaz ">974a [Ljubinić - Orašac - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60085/prikaz ">975 [Obrenovac - Orašac - Vukićevica (Arsenovića kraj) - Vukićevica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60086/prikaz ">976 [Obrenovac (Grabovac) - Dren ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60087/prikaz ">977 [Obrenovac - Ljubinić - Vukićevica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60088/prikaz ">978 [Obrenovac - Vukićevica - Ljubinić]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60091/prikaz ">983 [Obrenovac - Brović]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60092/prikaz ">5520а [Barajevo - Baćevac - Boždarevac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60093/prikaz ">5520 [Barajevo - Baćevac - Boždarevac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60094/prikaz ">5521 [Barajevo - Veliki Borak]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60095/prikaz ">5521а [Barajevo - Veliki Borak - Boždarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60096/prikaz ">5522 [Barajevo - Guncati - Baćevac - Boždarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60097/prikaz ">5522а [Barajevo - Guncati - Baćevac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60098/prikaz ">5523 [Barajevo - Pajšuma - Guberevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60099/prikaz ">55231 [Barajevo - Guberevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60100/prikaz ">5525а [Rogača - Drlupa - Sibnica - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60101/prikaz ">5525б [Rogača (Mala ćuprija) - Sopot - Sibnica - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60102/prikaz ">5525 [Barajevo - Drlupa - Rogača]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60103/prikaz ">55251 [Barajevo - Rogača	]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60104/prikaz ">5526а [Barajevo/Arnajevo/ - Termoelektrana]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60105/prikaz ">5526б [Barajevo - Spasovina - Arnajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60106/prikaz ">5526 [Barajevo - Arnajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60107/prikaz ">5527а [Barajevo AS - Manić - Rožanci - Arnajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60109/prikaz ">5529 [Barajevo AS - Manić - Rožanci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60114/prikaz ">5530а [Barajevo - Guncati - Vranić - Taraiš - Šiljakovac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60115/prikaz ">5530б [Barajevo - Šiljakovac - Dubrave - Vranić - Rašića kraj - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60116/prikaz ">5530в [Barajevo - Šiljakovac - Taraiš - Guncati - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60117/prikaz ">5530г [Barajevo - Guncati - Vranić - Rašića kraj - Šiljakovac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60119/prikaz ">5530д [Barajevo - Šiljakovac - Taraiš - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60120/prikaz ">5530 [Barajevo - Vranić - Taraiš - Šiljakovac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60121/prikaz ">5533а [Srednji kraj - Glumčevo brdo - Lipovica - Trebež - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60122/prikaz ">5533б [Barajevo - Trebež - Stara Lipovica - Glumčevo brdo - Nenadovac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60124/prikaz ">5534а [Barajevo - Srednji kraj - Karaula - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60125/prikaz ">5534 [Barajevo - Karaula - Srednji kraj - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60126/prikaz ">5535 [Barajevo - Gaj - Novo naselje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60128/prikaz ">5536а [Barajevo - Ravni gaj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60129/prikaz ">5536 [Barajevo - Naselje Gaj - Ravni gaj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60130/prikaz ">5538 [Barajevo - Sremčica - Meljak - Baćevac -  Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60131/prikaz ">355л [Grocka - Kamendol - Umčari]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60132/prikaz ">361л [Dražanj - Grocka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60133/prikaz ">363л [Živkovac - Kamendol - Begaljica - Brestovik - Grocka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60134/prikaz ">4101 [Mladenovac - Kovačevac - Velika Krsna (okretnica)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60135/prikaz ">4102 [Mladenovac - Beluće - Dolina Šešira - Velika Krsna (okretnica)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60136/prikaz ">41021 [Mladenovac - Dolina Šešira - Velika Krsna]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60137/prikaz ">4105 [Mladenovac - Kovačevac (Čot)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60138/prikaz ">4106 [Mladenovac - Marići - Kovačevac (Čot)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60139/prikaz ">4111 [Mladenovac - Jankovići - Nova škola - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_4112 vanja.pdf ">4112 [Mladenovac - Rabrovac (Šume-Simići-Joksimovića put) - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_4113 29.06.2023 vanja.pdf ">4113 [Mladenovac – Lug - Jagnjilo (Straževica - Beljakovići) - Rabrovac (Glišići - Joksimovića put - Šume) - Lug - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_4121 29.06.2023 vanja.pdf ">4121 [Mladenovac – Lug - Jagnjilo (Straževica-Beljakovići) - Klenac - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60146/prikaz ">4125 [Mladenovac -Pružatovac - Međulužje - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60147/prikaz ">4130 [Mladenovac - Međulužje - Markovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60148/prikaz ">41301 [Mladenovac - Markovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60149/prikaz ">4131 [Mladenovac - Crkvine - Beljevac - Markovac - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60150/prikaz ">4132 [Mladenovac - Crkvine - Beljevac - Markovac - Međulužje - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60151/prikaz ">4133 [Mladenovac - Markovac - Beljevac - Crkvine - Markovac - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60154/prikaz ">4136 [Mladenovac - Međulužje - Crkvine - Beljevac - Međulužje - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60155/prikaz ">4137 [Mladenovac - Crkvine - Beljevac - Markovac - Međulužje - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60156/prikaz ">4141 [Mladenovac - Pružatovac - Velika Ivanča (Strugara)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/4142.pdf ">4142 [Mladenovac - Selters - Pružatovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60158/prikaz ">4143 [Mladenovac - Pružatovac - Velika Ivanča (Metaljka)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60160/prikaz ">4151 [Mladenovac - Amerić I - Amerić II  - Mladenovac ]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60161/prikaz ">4152 [Mladenovac - Amerić II - Amerić I  - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60162/prikaz ">4161 [Mladenovac - Koraćica - Kosmaj (Zlatar)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60164/prikaz ">4163 [Mladenovac - Selters - Petkaći - Koraćica (Zmajevac)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60166/prikaz ">4171 [Mladenovac - Celo Vlaška - Kosni put - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60168/prikaz ">4172 [Mladenovac - Kosni put - Selo Vlaška - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60169/prikaz ">4175 [Mladenovac - Rajkovac - Vrbica - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60170/prikaz ">4181 [Mladenovac - Donja Dubona]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60172/prikaz ">4182 [Mladenovac - Selo Mladenovac - Šepšin (česma)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60173/prikaz ">4183 [Mladenovac - Dubona - Šepšin - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60174/prikaz ">4184 [Mladenovac - Šepšin - Dubona - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60175/prikaz ">4191 [Selo Mladenovac - Progres]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60177/prikaz ">4192 [Razvitak - Međulužje - Bataševo - Drapšin]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60178/prikaz ">4192а [Razvitak - Međulužje - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60179/prikaz ">4193 [Rajkovac - Koraćička banja]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60180/prikaz ">4194 [Selo Mladenovac - Međulužje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60181/prikaz ">4194л [Selo Mladenovac - Mladenovac AS]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60182/prikaz ">4195 [Mladenovac - Kovačevac (Put za Klisuru)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_4196 vanja.pdf ">4196 [Mladenovac - Kovačevac - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60184/prikaz ">4197 [Mladenovac - Međulužje - Razvitak]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60186/prikaz ">4199 [Granice - Trstena /Livadarska/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60187/prikaz ">4401 [Sopot - Parcani 	]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60188/prikaz ">4402а [Stojnik - Babe - Parcani - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60189/prikaz ">4402 [Sopot - Parcani - Babe - Dučina - Stojnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60190/prikaz ">4403 [Sopot - Ralja - Parcani]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60191/prikaz ">4404 [Sopot - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60192/prikaz ">4404а [Sopot - Sibnica /groblje/ - Mirosaljci - Junkovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60193/prikaz ">4404b [Sopot - Mirosaljci - Sibnica (groblje)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60194/prikaz ">4405 [Sopot - Nemenikuće - Bakčine]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60195/prikaz ">4406а [Sopot - Rogača - Drlupa -  Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60196/prikaz ">4406 [Sopot - Rogača - Drlupa - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60198/prikaz ">4407ц [Sopot - Slatina - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60199/prikaz ">4407 [Sopot - Drlupa - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60200/prikaz ">4407а [Sopot - Drlupa - Slatina (trafo) - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60201/prikaz ">4408 [Sopot - Tresije - Rogača (Mala ćuprija)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60202/prikaz ">4408а [Sopot - Tresije - Rogača]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60203/prikaz ">4409 [Sopot - Drlupa - Slatina - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60205/prikaz ">4410 [Sopot - Đurinci - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60206/prikaz ">4411 [Sopot - Đurinci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60207/prikaz ">4412 [Mladenovac - Bakčine - Nemenikuće - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60209/prikaz ">4414 [Sopot - Mala Ivanča - Mali Požarevac - Senaja]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60210/prikaz ">44141 [Sopot - Mala Ivanča - Mali Požarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60211/prikaz ">4415 [Sopot - Stanojevac - Mali Požarevac - Senaja]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60213/prikaz ">4415а [Sopot - Mali Požarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60214/prikaz ">4425 [Sopot - Drlupa - Sibnica - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60215/prikaz ">4426 [Sopot - Drlupa - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60216/prikaz ">4427 [Barajevo - Sibnica - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60217/prikaz ">4428 [Sopot - Sibnica - Rogača - Drlupa -  Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60218/prikaz ">4428A [Sopot - Dučina - Slatina - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60220/prikaz ">4433 [Sopot - Dučina - Stojnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60221/prikaz ">4434 [Sopot – Stojnik – Guberevac - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60222/prikaz ">4435 [Sopot - Guberevac 	]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60223/prikaz ">351 [Šumice - Grocka - Brestvik - Dražanj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60224/prikaz ">352 [Šumice - Dražanj (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60225/prikaz ">353 [Dražanj - Živkovac - Šumice (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60226/prikaz ">354 [Šumice - Vrčin - Zaklopača - Grocka - Kamendol]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60227/prikaz ">354а [Šumice (Vrčin-Zaklopača-Grocka) - Živkovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60228/prikaz ">354б [Šumice - Vrčin - Zaklopača - Grocka]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60229/prikaz ">355а [Šumice - Grocka - Kamendol - Živkovac - Dražanj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60230/prikaz ">355 [Šumice - Grocka - Kamendol - Dražanj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60231/prikaz ">356 [Šumice - Grocka - Brestovik - Kamendol - Pudarci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60232/prikaz ">361 [Šumice - Grocka - Živkovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60233/prikaz ">361б [Šumice - Živkovac - Dražanj (preko Grocke)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60235/prikaz ">362 [Živkovac - Šumice (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60237/prikaz ">363 [Šumice - Grocka - Brestovik - Kamendol - Živkovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60238/prikaz ">366 [Šumice - Umčari - Kamendol (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60239/prikaz ">366а [Kamendol - Šumice (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60240/prikaz ">450 [Beograd - Sopot (Avalskim putem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60241/prikaz ">451 [Beograd - Babe - Stojnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60242/prikaz ">460 [Beograd - Mala Ivanča (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60243/prikaz ">460а [Beograd - Mali Popović - Mala Ivanča (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60244/prikaz ">461 [Šumice - Vrčin - Ravnice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60245/prikaz ">462 [Šumice - Vrčin - Jaričište]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60246/prikaz ">463 [Šumice - Vrčin - Jaričište - Ravnice]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60248/prikaz ">464 [Sopot - Mali Popović - Mali Požarevac - Beograd]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60249/prikaz ">465 [Sopot (Stanojevac) - Beograd (Autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60252/prikaz ">466 [Beograd - Jaričište - Vrčin (centar)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60254/prikaz ">470 [Beograd - Mala Ivanča (Avalskim putem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60255/prikaz ">470а [Beograd - Parcani - Mala Ivanča (Avalskim putem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60256/prikaz ">474 [Beograd - Parcani]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60257/prikaz ">491 [Beograd - Ralja - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60258/prikaz ">491а [Beograd - Ralja - Sopot - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60260/prikaz ">493 [Beograd - Mladenovac (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60261/prikaz ">493a [Beograd - Mladenovac (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60263/prikaz ">494а [Mladenovac - Senaja - Mali Požarevac - Beograd]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60264/prikaz ">499 [Mladenovac - Dubona - Šepšin - Senaja - Beograd]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60265/prikaz ">560 [Banovo brdo - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60266/prikaz ">560а [Banovo brdo - Sremčica - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60267/prikaz ">560е [Banovo brdo - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60268/prikaz ">561 [Barajevo - Guncati - Baćevac - Banovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60269/prikaz ">561а [Barajevo - Baćevac - Guncati - Banovo brdo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60270/prikaz ">581 [Beograd - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60271/prikaz ">581а [Beograd - Lazarevac (Dom zdravlja)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60272/prikaz ">581е [Beograd - Lazarevac (ekspres)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60273/prikaz ">583 [Beograd - Kruševica - Trbušnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60274/prikaz ">583а [Beograd - Kruševica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60275/prikaz ">585 [Beograd - Mirosaljci (Gunjevac)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60276/prikaz ">586 [Banovo brdo - Termoelektrana]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60277/prikaz ">588 [Beograd - Mirosaljci]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60278/prikaz ">591 [Banovo brdo - Vranić - Taraiš]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60279/prikaz ">591а [Banovo brdo - Rašića kraj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60280/prikaz ">592 [Banovo brdo - Rašića kraj - Draževac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60281/prikaz ">593 [Banovo brdo - Meljak - Šiljakovac - Taraiš]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60282/prikaz ">593а [Banovo brdo - Meljak - Šiljakovac - Rašića kraj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60283/prikaz ">593б [Banovo brdo - Šiljakovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60284/prikaz ">860 [Beograd - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60285/prikaz ">860e [Beograd - Obrenovac (ekspres)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60289/prikaz ">4414а [Sopot - Mala Ivanča - Mali Požarevac - Beograd]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60290/prikaz ">5570 [Barajevo - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60291/prikaz ">116 [Lazarevac - Stepojevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60292/prikaz ">923б [Obrenovac - Skela]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60293/prikaz ">961 [Obrenovac - Stubline - Piroman]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60294/prikaz ">961а [Obrenovac - Stubline - Piroman]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60295/prikaz ">975а [Obrenovac - Orašac - Vukićevica (Arsenovića kraj) - Vukićevica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60296/prikaz ">975б [Obrenovac - Orašac - Ljubinić - Vukićevica (Arsenovića kraj) - Vukićevica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60297/prikaz ">4413 [Sopot - Mala Ivanča - Mali Požarevac - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60298/prikaz ">5524 [Barajevo - Guncati]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60299/prikaz ">5528 [Barajevo - Šiljakovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60301/prikaz ">4404ц [Sopot - Slatina - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60304/prikaz ">165а [Dren - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60305/prikaz ">4199а [Nikole Pašića - Trstena /Livadarska/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60306/prikaz ">4199б [Granice (vinogradi) - Trstena /Livadarska/)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60307/prikaz ">4199ц [Opština - Granice (vinogradi)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60308/prikaz ">4406б [Sopot - Rogača - Drlupa - Slatina - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60309/prikaz ">4402б [Sopot - Ropočevo - Ralja - Babe - Stojnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60310/prikaz ">4191б [Ul. Nikole Pašića - Progres]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60311/prikaz ">44331 [Stojnik -  Sopot	]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/red_voznje_4113A vanja.pdf ">4113а [Mladenovac – Lug - Rabrovac (Simići - Joksimovića put - Šume) - Jagnjilo (Beljakovići - Straževica) - Klenac - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60314/prikaz ">451а [Beograd - Stojnik]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60316/prikaz ">4404д [Sopot - Slatina (trafo) - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60317/prikaz ">466а [Beograd - Vrčin (centar)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60318/prikaz ">5533в [Barajevo - Srednji kraj - Karaula - Stara Lipovica - Trebež -  Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60319/prikaz ">4112а [Mladenovac - Rabrovac (Šume - Simići - Joksimovića put) - Lug - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60320/prikaz ">41022 [Velika Krsna - Beluće - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60321/prikaz ">4406ц [Sopot - Rogača - Drlupa - Slatina - Sibnica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60323/prikaz ">860м [Beograd - Industrijska zona Barič - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60324/prikaz ">860л [Obrenovac - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60325/prikaz ">860б [Beograd - Mala Moštanica - Industrijska zona Barič]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60326/prikaz ">860с [Beograd - Mislođin - Stepojevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60327/prikaz ">860а [Beograd - Rucka - Mala Moštanica - Barič (ambulanta)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60328/prikaz ">860бл [Industrijska zona Barič - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60329/prikaz ">860д [Banovo brdo - Veverički kraj - Draževac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60330/prikaz ">860в [Banovo brdo - Baljevac (Ibarska magistrala)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60331/prikaz ">860п [Banovo brdo - Poljane (Donji kraj)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60332/prikaz ">860ј [Beograd - Jasenak (puž)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60333/prikaz ">860т [Industrijska zona Barič - Vukićevica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60335/prikaz ">860у [Industrijska zona Barič - Ušće]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60336/prikaz ">860и [Beograd - Surčin - Industrijska zona Barič]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60337/prikaz ">120 [Železnička stanica Lazarevac - AS Lazarevac - Železnička stanica Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60338/prikaz ">5519 [Barajevo - Baćevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60339/prikaz ">860вп [Duboko - Veliko polje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60340/prikaz ">860г [Industrijska zona Barič - AS Obrenovac - Grabovac (Donji kraj) - Dren (Iverić)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/Polasci za putnike 860MV.pdf ">860мв [BAS - Naselje  Sava  (preko autoputa  Miloš Veliki )]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60342/prikaz ">860р [Industrijska zona Barič - Rvati - Trstenica - Industrijska zona Barič]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60343/prikaz ">860ш [Sremčica - Veverički kraj - Šumadija - Vis - Mislođin - Industrijska zona Barič]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60344/prikaz ">313 [Mirijevo 4 - Kaluđerica - Leštane (Ravan)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60345/prikaz ">860ц [BAS - Baričkih boraca - Industrijska zona Barič]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/350.pdf ">350 [Živkovac - Dražanj - Kamendol - Brestovik - Živkovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60352/prikaz ">352а [Šumice - Vrčin - Umčari - Dražanj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60355/prikaz ">355б [Šumice - Grocka - Brestovik - Kamendol - Dražanj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60365/prikaz ">365 [Grocka - Umčari - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60374/prikaz ">584 [Lazarevac - Stepojevac - Leskovac - Veliki Borak - Baćevac - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60390/prikaz ">4444 [Sopot - Senja - Đurinci -  Ropočevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60391/prikaz ">4112б [Mladenovac – Lug - Rabrovac (Šume-Simići-Joksimovića put) - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60392/prikaz ">4113б [Mladenovac – Klenac - Jagnjilo (Straževica - Beljakovići) - Rabrovac (Simići - Joksimovića put - Šume) - Lug - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60394/prikaz ">4400 [Sopot - Ralja - Livnica - Ralja (Drumine) - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60395/prikaz ">4401а [Sopot - Babe - Parcani]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60396/prikaz ">860з [Duboko - Mala Moštanica - Zabrežje]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60465/prikaz ">465а [Beograd - SP Lasta - Mali Požarevac - Sopot]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60467/prikaz ">467 [Vrčin - Grocka - Kamendol - Ilinski kraj]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60493/prikaz ">493б [Beograd - SP Lasta - Mali Požarevac - Mladenovac (autoputem)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60580/prikaz ">580 [Beograd - Lazarevac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/60581/prikaz ">4175а [Mladenovac - Vrbica - Rajkovac - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/61142/prikaz ">4121а [Mladenovac – Klenac - Jagnjilo - Lug - Mladenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/61335/prikaz ">860у1 [AS Obrenovac - Staro Ušće]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/61977/prikaz ">977а [Vukićevica - Ljubinić - Grabovac - Obrenovac]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/62335/prikaz ">860у2 [Industrijska zona Barič - Ušće (Gola bara)]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/62336/prikaz ">493к [Mladenovac AS - Beograd ( Mostarska Petlja) - Mladenovac AS]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/90001/prikaz ">E1 [Ustanička - Blok 45]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/90002/prikaz ">E2 [Petlovo brdo - Trg republike]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/90003/prikaz ">E6 [Mirijevo 4 - Novi Beograd /Blok 45/]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/90004/prikaz ">E9 [Kumodraž - Studentski Trg]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/90005/prikaz ">A1 [Trg Slavija - Aerodrom Nikola Tesla]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/51304/prikaz ">304Н [Trg Republike - Kaluđerica]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/storage/privremeni_red_voznje/5529c.pdf ">5529ц [Barajevo - Rožanci - Manić - Barajevo]</option>
+
+            
+                <option value=" https://www.bgprevoz.rs/linije/red-voznje/linija/52304/prikaz ">304Н [Trg Republike - Ritopek]</option>
+
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-1-vmz1" style="width: 701px;"><span class="selection"><span class="select2-selection select2-selection--single select2-selection--clearable" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-linija-container" aria-controls="select2-linija-container"><button type="button" class="select2-selection__clear" tabindex="-1" title="Remove all items" aria-label="Remove all items" aria-describedby="select2-linija-container" data-select2-id="select2-data-3-r5b4"><span aria-hidden="true">×</span></button><span class="select2-selection__rendered" id="select2-linija-container" role="textbox" aria-readonly="true" title="Izaberite liniju">Izaberite liniju</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+    </div>
+</div>
+                
+                    </div>
+</div>
+        </main>
+{% endblock %}

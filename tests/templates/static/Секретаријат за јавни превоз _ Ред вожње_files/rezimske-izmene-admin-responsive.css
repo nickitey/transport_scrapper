@@ -1,0 +1,142 @@
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+
+}
+th{
+    padding: 1px 8px;
+    border-bottom: 1px solid rgb(197, 186, 186);
+    border-top: 1px solid rgb(197, 186, 186);
+    /* border-collapse: collapse; */
+}
+td {
+    padding: 1px 8px;
+    border-bottom: 1px solid rgb(197, 186, 186);
+}
+
+.linija-info table td {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}
+
+@media (min-width: 0px) {
+    #gmap-r {
+        height: calc(90vh - 100px);
+    }
+
+    .route-select {
+        left: 186px;
+        position: absolute;
+        top: 5px;
+        width: 40%;
+    }
+
+    .route-panel {
+        min-width: 250px;
+        height: 87%;
+        position:absolute;
+        right: 59px;
+        top: 10px;
+        width: 25%
+    }
+
+    .linija-info table td {
+        vertical-align: top !important;
+    }
+    .linija-info table {
+        font-size: 12px;
+    }
+
+    .gmap-wrapper {
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    #gmap-r {
+        height: calc(90vh - 100px);
+    }
+
+    .route-select {
+        width: 60% !important;
+        left: 186px;
+        position: absolute;
+        top: 5px;
+    }
+
+    .route-panel {
+        margin-bottom: 10px;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .gmap-wrapper {
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .route-select {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .route-select {
+        width: 40% !important;
+    }
+    .route-select.pod_linije {
+        top: 100px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .route-select {
+        top: 54px;
+        left: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .route-select {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px) {
+    .route-select {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .gmap-wrapper {
+        padding-right: 200px;
+        padding-left: 200px;
+        margin-bottom: 50px;
+    }
+
+    .route-panel {
+        right: 259px;
+        width: 20%;
+    }
+
+    .route-select {
+        left: 386px;
+    }
+
+    .route-select {
+        width: 25%;
+    }
+}
