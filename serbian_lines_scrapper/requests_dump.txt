@@ -1,0 +1,23 @@
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "_token": "jTVwVLPYBtr6nydGqo6PK9d8qYsRwcOJk6K37Voo", 
+    "latin": "true"
+  }, 
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Accept-Language": "ru,en;q=0.9", 
+    "Content-Length": "58", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.952 YaBrowser/24.4.1.952 (beta) Yowser/2.5 Safari/537.36", 
+    "X-Amzn-Trace-Id": "Root=1-6659f09e-288e1379541e336a59953b90"
+  }, 
+  "json": null, 
+  "origin": "178.76.243.134", 
+  "url": "http://httpbin.org/post"
+}
+

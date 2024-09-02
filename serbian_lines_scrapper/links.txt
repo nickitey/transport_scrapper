@@ -1,0 +1,457 @@
+<a accesskey="z" href="/wiki/Main_Page" title="Visit the main page [z]"><span>Main page</span></a>
+<a class="mw-logo" href="/wiki/Main_Page">
+<img alt="" aria-hidden="true" class="mw-logo-icon" height="50" src="/static/images/icons/wikipedia.png" width="50"/>
+<span class="mw-logo-container skin-invert">
+<img alt="Wikipedia" class="mw-logo-wordmark" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;"/>
+<img alt="The Free Encyclopedia" class="mw-logo-tagline" height="13" src="/static/images/mobile/copyright/wikipedia-tagline-en.svg" style="width: 7.3125em; height: 0.8125em;" width="117"/>
+</span>
+</a>
+<a accesskey="c" href="/wiki/Kevin_Bacon" title="View the content page [c]"><span>Article</span></a>
+<a href="/wiki/Kevin_Bacon"><span>Read</span></a>
+<a href="/wiki/Kevin_Bacon"><span>Read</span></a>
+<a class="mw-disambig" href="/wiki/Kevin_Bacon_(disambiguation)" title="Kevin Bacon (disambiguation)">Kevin Bacon (disambiguation)</a>
+<a href="/wiki/Philadelphia" title="Philadelphia">Philadelphia</a>
+<a href="/wiki/Kevin_Bacon_filmography" title="Kevin Bacon filmography">Filmography</a>
+<a href="/wiki/Kyra_Sedgwick" title="Kyra Sedgwick">Kyra Sedgwick</a>
+<a href="/wiki/Sosie_Bacon" title="Sosie Bacon">Sosie Bacon</a>
+<a href="/wiki/Edmund_Bacon_(architect)" title="Edmund Bacon (architect)">Edmund Bacon</a>
+<a href="/wiki/Michael_Bacon_(musician)" title="Michael Bacon (musician)">Michael Bacon</a>
+<a class="mw-redirect" href="/wiki/Leading_man" title="Leading man">leading man</a>
+<a href="/wiki/Character_actor" title="Character actor">character roles</a>
+<a class="mw-redirect" href="/wiki/Golden_Globe_Award" title="Golden Globe Award">Golden Globe Award</a>
+<a class="mw-redirect" href="/wiki/Screen_Actors_Guild_Award" title="Screen Actors Guild Award">Screen Actors Guild Award</a>
+<a class="mw-redirect" href="/wiki/Primetime_Emmy_Award" title="Primetime Emmy Award">Primetime Emmy Award</a>
+<a class="mw-redirect" href="/wiki/National_Lampoon%27s_Animal_House" title="National Lampoon's Animal House">National Lampoon's Animal House</a>
+<a href="/wiki/Footloose_(1984_film)" title="Footloose (1984 film)">Footloose</a>
+<a href="/wiki/Diner_(1982_film)" title="Diner (1982 film)">Diner</a>
+<a href="/wiki/JFK_(film)" title="JFK (film)">JFK</a>
+<a href="/wiki/A_Few_Good_Men" title="A Few Good Men">A Few Good Men</a>
+<a href="/wiki/Apollo_13_(film)" title="Apollo 13 (film)">Apollo 13</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)">Mystic River</a>
+<a href="/wiki/Frost/Nixon_(film)" title="Frost/Nixon (film)">Frost/Nixon</a>
+<a href="/wiki/Friday_the_13th_(1980_film)" title="Friday the 13th (1980 film)">Friday the 13th</a>
+<a href="/wiki/Tremors_(1990_film)" title="Tremors (1990 film)"><i>Tremors</i></a>
+<a href="/wiki/The_River_Wild" title="The River Wild">The River Wild</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Crazy,_Stupid,_Love" title="Crazy, Stupid, Love">Crazy, Stupid, Love</a>
+<a href="/wiki/Patriots_Day_(film)" title="Patriots Day (film)">Patriots Day</a>
+<a href="/wiki/Losing_Chase" title="Losing Chase">Losing Chase</a>
+<a href="/wiki/Loverboy_(2005_film)" title="Loverboy (2005 film)">Loverboy</a>
+<a href="/wiki/Golden_Globe_Award_for_Best_Actor_%E2%80%93_Miniseries_or_Television_Film" title="Golden Globe Award for Best Actor – Miniseries or Television Film">Golden Globe Award</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Male_Actor_in_a_Miniseries_or_Television_Movie" title="Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Miniseries or Television Movie">Screen Actors Guild Award</a>
+<a href="/wiki/Michael_Strobl" title="Michael Strobl">Lt. Col. Michael Strobl</a>
+<a href="/wiki/HBO" title="HBO">HBO</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a href="/wiki/Fox_Broadcasting_Company" title="Fox Broadcasting Company">Fox</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a href="/wiki/Amazon_Prime_Video" title="Amazon Prime Video">Amazon Prime Video</a>
+<a href="/wiki/I_Love_Dick_(TV_series)" title="I Love Dick (TV series)">I Love Dick</a>
+<a href="/wiki/Golden_Globe_Award_for_Best_Actor_%E2%80%93_Television_Series_Musical_or_Comedy" title="Golden Globe Award for Best Actor – Television Series Musical or Comedy">Golden Globe Award</a>
+<a href="/wiki/Showtime_(TV_network)" title="Showtime (TV network)">Showtime</a>
+<a href="/wiki/City_on_a_Hill_(TV_series)" title="City on a Hill (TV series)">City on a Hill</a>
+<a href="/wiki/The_Guardian" title="The Guardian">The Guardian</a>
+<a class="mw-redirect" href="/wiki/Academy_Award" title="Academy Award">Academy Award</a>
+<a href="/wiki/Hollywood_Walk_of_Fame" title="Hollywood Walk of Fame">Hollywood Walk of Fame</a>
+<a href="/wiki/Six_Degrees_of_Kevin_Bacon" title="Six Degrees of Kevin Bacon">Six Degrees of Kevin Bacon</a>
+<a href="/wiki/EE_(telecommunications)" title="EE (telecommunications)">EE</a>
+<a href="/wiki/Kyra_Sedgwick" title="Kyra Sedgwick">Kyra Sedgwick</a>
+<a href="/wiki/Philadelphia" title="Philadelphia">Philadelphia</a>
+<a href="/wiki/Edmund_Bacon_(architect)" title="Edmund Bacon (architect)">Edmund Bacon</a>
+<a href="/wiki/Urban_planning" title="Urban planning">urban planner</a>
+<a href="/wiki/Design_of_Cities" title="Design of Cities">Design of Cities</a>
+<a href="/wiki/Julia_R._Masterman_School" title="Julia R. Masterman School">Julia R. Masterman School</a>
+<a href="/wiki/Spring_Garden,_Philadelphia" title="Spring Garden, Philadelphia">Spring Garden</a>
+<a href="/wiki/Pennsylvania_Governor%27s_School_for_the_Arts" title="Pennsylvania Governor's School for the Arts">Pennsylvania Governor's School for the Arts</a>
+<a href="/wiki/Bucknell_University" title="Bucknell University">Bucknell University</a>
+<a href="/wiki/Lewisburg,_Pennsylvania" title="Lewisburg, Pennsylvania">Lewisburg, Pennsylvania</a>
+<a href="/wiki/Glory_Van_Scott" title="Glory Van Scott">Glory Van Scott</a>
+<a href="/wiki/Kevin_Bacon_filmography" title="Kevin Bacon filmography">Kevin Bacon filmography</a>
+<a class="mw-redirect" href="/wiki/Circle_in_the_Square" title="Circle in the Square">Circle in the Square Theater School</a>
+<a class="mw-redirect" href="/wiki/Nancy_Mills" title="Nancy Mills">Nancy Mills</a>
+<a href="/wiki/Cosmopolitan_(magazine)" title="Cosmopolitan (magazine)">Cosmopolitan</a>
+<a href="/wiki/Fraternities_and_sororities" title="Fraternities and sororities">fraternity</a>
+<a href="/wiki/Animal_House" title="Animal House">National Lampoon's Animal House</a>
+<a href="/wiki/Search_for_Tomorrow" title="Search for Tomorrow">Search for Tomorrow</a>
+<a href="/wiki/Guiding_Light" title="Guiding Light">Guiding Light</a>
+<a href="/wiki/Friday_the_13th_(1980_film)" title="Friday the 13th (1980 film)"><i>Friday the 13th</i></a>
+<a href="/wiki/Getting_Out" title="Getting Out">Getting Out</a>
+<a href="/wiki/Phoenix_Theater" title="Phoenix Theater">Phoenix Theater</a>
+<a href="/wiki/Flux" title="Flux">Flux</a>
+<a class="mw-redirect" href="/wiki/Second_Stage_Theatre" title="Second Stage Theatre">Second Stage Theatre</a>
+<a href="/wiki/Obie_Award" title="Obie Award">Obie Award</a>
+<a href="/wiki/Forty_Deuce" title="Forty Deuce">Forty Deuce</a>
+<a class="mw-redirect" href="/wiki/Slab_Boys" title="Slab Boys">Slab Boys</a>
+<a href="/wiki/Sean_Penn" title="Sean Penn">Sean Penn</a>
+<a href="/wiki/Val_Kilmer" title="Val Kilmer">Val Kilmer</a>
+<a href="/wiki/Barry_Levinson" title="Barry Levinson">Barry Levinson</a>
+<a href="/wiki/Diner_(1982_film)" title="Diner (1982 film)">Diner</a>
+<a href="/wiki/Steve_Guttenberg" title="Steve Guttenberg">Steve Guttenberg</a>
+<a href="/wiki/Daniel_Stern_(actor)" title="Daniel Stern (actor)">Daniel Stern</a>
+<a href="/wiki/Mickey_Rourke" title="Mickey Rourke">Mickey Rourke</a>
+<a href="/wiki/Tim_Daly" title="Tim Daly">Tim Daly</a>
+<a href="/wiki/Ellen_Barkin" title="Ellen Barkin">Ellen Barkin</a>
+<a href="/wiki/Footloose_(1984_film)" title="Footloose (1984 film)">Footloose</a>
+<a href="/wiki/James_Dean" title="James Dean">James Dean</a>
+<a href="/wiki/Rebel_Without_a_Cause" title="Rebel Without a Cause">Rebel Without a Cause</a>
+<a href="/wiki/Mickey_Rooney" title="Mickey Rooney">Mickey Rooney</a>
+<a href="/wiki/Judy_Garland" title="Judy Garland">Judy Garland</a>
+<a class="mw-redirect" href="/wiki/Typecasting_(acting)" title="Typecasting (acting)">typecasting</a>
+<a href="/wiki/John_Hughes_(filmmaker)" title="John Hughes (filmmaker)">John Hughes</a>
+<a href="/wiki/Planes,_Trains_and_Automobiles" title="Planes, Trains and Automobiles">Planes, Trains and Automobiles</a>
+<a href="/wiki/She%27s_Having_a_Baby" title="She's Having a Baby">She's Having a Baby</a>
+<a href="/wiki/The_Big_Picture_(1989_film)" title="The Big Picture (1989 film)">The Big Picture</a>
+<a href="/wiki/Tremors_(1990_film)" title="Tremors (1990 film)">Tremors</a>
+<a href="/wiki/Joel_Schumacher" title="Joel Schumacher">Joel Schumacher</a>
+<a href="/wiki/Flatliners" title="Flatliners">Flatliners</a>
+<a href="/wiki/Elizabeth_Perkins" title="Elizabeth Perkins">Elizabeth Perkins</a>
+<a href="/wiki/He_Said,_She_Said_(film)" title="He Said, She Said (film)">He Said, She Said</a>
+<a href="/wiki/The_New_York_Times" title="The New York Times">The New York Times</a>
+<a href="/wiki/Oliver_Stone" title="Oliver Stone">Oliver Stone</a>
+<a href="/wiki/JFK_(film)" title="JFK (film)">JFK</a>
+<a class="mw-redirect" href="/wiki/A_Few_Good_Men_(film)" title="A Few Good Men (film)">A Few Good Men</a>
+<a href="/wiki/Michael_Greif" title="Michael Greif">Michael Greif</a>
+<a class="mw-redirect" href="/wiki/Golden_Globe_Award" title="Golden Globe Award">Golden Globe</a>
+<a href="/wiki/The_River_Wild" title="The River Wild">The River Wild</a>
+<a href="/wiki/Meryl_Streep" title="Meryl Streep">Meryl Streep</a>
+<a href="/wiki/Murder_in_the_First_(film)" title="Murder in the First (film)">Murder in the First</a>
+<a href="/wiki/Blockbuster_(entertainment)" title="Blockbuster (entertainment)">blockbuster</a>
+<a href="/wiki/Apollo_13_(film)" title="Apollo 13 (film)">Apollo 13</a>
+<a href="/wiki/Sleepers_(film)" title="Sleepers (film)">Sleepers</a>
+<a href="/wiki/Picture_Perfect_(1997_film)" title="Picture Perfect (1997 film)">Picture Perfect</a>
+<a href="/wiki/Losing_Chase" title="Losing Chase">Losing Chase</a>
+<a href="/wiki/Digging_to_China" title="Digging to China">Digging to China</a>
+<a href="/wiki/Payola" title="Payola">payola</a>
+<a class="mw-redirect" href="/wiki/Telling_Lies_in_America_(film)" title="Telling Lies in America (film)">Telling Lies in America</a>
+<a href="/wiki/Wild_Things_(film)" title="Wild Things (film)">Wild Things</a>
+<a href="/wiki/Stir_of_Echoes" title="Stir of Echoes">Stir of Echoes</a>
+<a href="/wiki/David_Koepp" title="David Koepp">David Koepp</a>
+<a href="/wiki/Cannes_Film_Festival" title="Cannes Film Festival">Cannes Film Festival</a>
+<a href="/wiki/Paul_Verhoeven" title="Paul Verhoeven">Paul Verhoeven</a>
+<a href="/wiki/Hollow_Man" title="Hollow Man">Hollow Man</a>
+<a href="/wiki/Colin_Firth" title="Colin Firth">Colin Firth</a>
+<a href="/wiki/Rachel_Blanchard" title="Rachel Blanchard">Rachel Blanchard</a>
+<a href="/wiki/M%C3%A9nage_%C3%A0_trois" title="Ménage à trois">ménage à trois</a>
+<a href="/wiki/Where_the_Truth_Lies" title="Where the Truth Lies">Where the Truth Lies</a>
+<a href="/wiki/Atom_Egoyan" title="Atom Egoyan">Atom Egoyan</a>
+<a class="mw-redirect" href="/wiki/MPAA" title="MPAA">MPAA</a>
+<a class="mw-redirect" href="/wiki/MPAA_film_rating_system" title="MPAA film rating system">NC-17</a>
+<a href="/wiki/My_Dog_Skip_(film)" title="My Dog Skip (film)">My Dog Skip</a>
+<a href="/wiki/Sean_Penn" title="Sean Penn">Sean Penn</a>
+<a href="/wiki/Tim_Robbins" title="Tim Robbins">Tim Robbins</a>
+<a href="/wiki/Clint_Eastwood" title="Clint Eastwood">Clint Eastwood</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)">Mystic River</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Beauty_Shop" title="Beauty Shop">Beauty Shop</a>
+<a href="/wiki/Queen_Latifah" title="Queen Latifah">Queen Latifah</a>
+<a href="/wiki/HBO_Films" title="HBO Films">HBO Films</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a href="/wiki/Michael_Strobl" title="Michael Strobl">Michael Strobl</a>
+<a class="mw-redirect" href="/wiki/Desert_Storm" title="Desert Storm">Desert Storm</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Male_Actor_in_a_Miniseries_or_Television_Movie" title="Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Miniseries or Television Movie">Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Miniseries or Television Movie</a>
+<a class="mw-redirect" href="/wiki/Toronto_Film_Festival" title="Toronto Film Festival">Toronto Film Festival</a>
+<a href="/wiki/Matthew_Vaughn" title="Matthew Vaughn">Matthew Vaughn</a>
+<a class="mw-redirect" href="/wiki/Sebastian_Shaw_(comics)" title="Sebastian Shaw (comics)">Sebastian Shaw</a>
+<a href="/wiki/Crazy,_Stupid,_Love" title="Crazy, Stupid, Love">Crazy, Stupid, Love</a>
+<a href="/wiki/Dustin_Lance_Black" title="Dustin Lance Black">Dustin Lance Black</a>
+<a href="/wiki/8_(play)" title="8 (play)">8</a>
+<a class="mw-redirect" href="/wiki/Perry_v._Brown" title="Perry v. Brown">federal trial</a>
+<a class="mw-redirect" href="/wiki/Proposition_8" title="Proposition 8">Prop 8 ban</a>
+<a href="/wiki/Charles_J._Cooper" title="Charles J. Cooper">Charles J. Cooper</a>
+<a class="mw-redirect" href="/wiki/Wilshire_Ebell_Theatre" title="Wilshire Ebell Theatre">Wilshire Ebell Theatre</a>
+<a href="/wiki/American_Foundation_for_Equal_Rights" title="American Foundation for Equal Rights">American Foundation for Equal Rights</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_on_Television" title="Saturn Award for Best Actor on Television">Saturn Award for Best Actor on Television</a>
+<a href="/wiki/Black_Mass_(film)" title="Black Mass (film)">Black Mass</a>
+<a href="/wiki/Johnny_Depp" title="Johnny Depp">Johnny Depp</a>
+<a class="mw-redirect" href="/wiki/Huffington_Post" title="Huffington Post">Huffington Post</a>
+<a href="/wiki/Tremors_(1990_film)" title="Tremors (1990 film)"><i>Tremors</i> franchise</a>
+<a href="/wiki/Patriots_Day_(film)" title="Patriots Day (film)">Patriots Day</a>
+<a href="/wiki/Boston_Marathon_bombing" title="Boston Marathon bombing">2013 Boston Marathon bombing</a>
+<a href="/wiki/The_Bacon_Brothers" title="The Bacon Brothers">The Bacon Brothers</a>
+<a href="/wiki/Michael_Bacon_(musician)" title="Michael Bacon (musician)">Michael</a>
+<a href="/wiki/Instagram" title="Instagram">Instagram</a>
+<a href="/wiki/Old_97%27s" title="Old 97's">Old 97's</a>
+<a href="/wiki/The_Guardians_of_the_Galaxy_Holiday_Special" title="The Guardians of the Galaxy Holiday Special">The Guardians of the Galaxy Holiday Special</a>
+<a href="/wiki/EE_(telecommunications)" title="EE (telecommunications)">EE</a>
+<a href="/wiki/Six_Degrees_of_Kevin_Bacon" title="Six Degrees of Kevin Bacon">Six Degrees of Kevin Bacon</a>
+<a href="/wiki/Trivia" title="Trivia">trivia</a>
+<a class="mw-redirect" href="/wiki/Big_screen" title="Big screen">screen</a>
+<a href="/wiki/Six_degrees_of_separation" title="Six degrees of separation">six degrees of separation</a>
+<a href="/wiki/Internet_meme" title="Internet meme">meme</a>
+<a href="/wiki/SixDegrees.org" title="SixDegrees.org">SixDegrees.org</a>
+<a href="/wiki/Social_networking_service" title="Social networking service">social networking service</a>
+<a href="/wiki/Six_Degrees_of_Kevin_Bacon" title="Six Degrees of Kevin Bacon">Bacon number</a>
+<a href="/wiki/IMDb" title="IMDb">Internet Movie Database</a>
+<a href="/wiki/Paul_Erd%C5%91s" title="Paul Erdős">Paul Erdős</a>
+<a href="/wiki/Erd%C5%91s_number" title="Erdős number">Erdős number</a>
+<a href="/wiki/Paul_Erd%C5%91s" title="Paul Erdős">Paul Erdős</a>
+<a href="/wiki/Erd%C5%91s_number" title="Erdős number">Erdős number</a>
+<a href="/wiki/Erd%C5%91s%E2%80%93Bacon_number" title="Erdős–Bacon number">Erdős–Bacon number</a>
+<a href="/wiki/Kyra_Sedgwick" title="Kyra Sedgwick">Kyra Sedgwick</a>
+<a href="/wiki/PBS" title="PBS">PBS</a>
+<a href="/wiki/Lanford_Wilson" title="Lanford Wilson">Lanford Wilson</a>
+<a href="/wiki/Lemon_Sky" title="Lemon Sky">Lemon Sky</a>
+<a href="/wiki/Pyrates" title="Pyrates">Pyrates</a>
+<a href="/wiki/Murder_in_the_First_(film)" title="Murder in the First (film)">Murder in the First</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Loverboy_(2005_film)" title="Loverboy (2005 film)">Loverboy</a>
+<a href="/wiki/Sosie_Bacon" title="Sosie Bacon">Sosie Ruth</a>
+<a href="/wiki/Upper_West_Side" title="Upper West Side">Upper West Side</a>
+<a href="/wiki/Manhattan" title="Manhattan">Manhattan</a>
+<a href="/wiki/Tracy_Pollan" title="Tracy Pollan">Tracy Pollan</a>
+<a href="/wiki/Separation_of_church_and_state_in_the_United_States" title="Separation of church and state in the United States">separation of church and state</a>
+<a href="/wiki/The_Times" title="The Times">The Times</a>
+<a href="/wiki/Atheism" title="Atheism">did not "believe in God."</a>
+<a href="/wiki/Antireligion" title="Antireligion">anti-religion</a>
+<a href="/wiki/Will.i.am" title="Will.i.am">will.i.am</a>
+<a class="mw-redirect" href="/wiki/It%27s_a_New_Day_(Will.i.am_song)" title="It's a New Day (Will.i.am song)">"It's a New Day"</a>
+<a href="/wiki/Barack_Obama" title="Barack Obama">Barack Obama</a>
+<a href="/wiki/Ponzi_scheme" title="Ponzi scheme">Ponzi scheme</a>
+<a href="/wiki/Bernie_Madoff" title="Bernie Madoff">Bernie Madoff</a>
+<a href="/wiki/Finding_Your_Roots" title="Finding Your Roots">Finding Your Roots</a>
+<a class="mw-redirect" href="/wiki/Henry_Louis_Gates" title="Henry Louis Gates">Henry Louis Gates</a>
+<a href="/wiki/Apollo_13_(film)" title="Apollo 13 (film)">Apollo 13</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)">Mystic River</a>
+<a href="/wiki/Blockbuster_Entertainment_Awards" title="Blockbuster Entertainment Awards">Blockbuster Entertainment Awards</a>
+<a href="/wiki/Blockbuster_Entertainment_Awards" title="Blockbuster Entertainment Awards">Favorite Actor – Science Fiction</a>
+<a href="/wiki/Hollow_Man" title="Hollow Man">Hollow Man</a>
+<a href="/wiki/Boston_Society_of_Film_Critics" title="Boston Society of Film Critics">Boston Society of Film Critics Awards</a>
+<a href="/wiki/Boston_Society_of_Film_Critics_Award_for_Best_Cast" title="Boston Society of Film Critics Award for Best Cast">Best Ensemble Cast</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)"><i>Mystic River</i></a>
+<a href="/wiki/Bravo_Otto" title="Bravo Otto">Bravo Otto Awards</a>
+<a href="/wiki/Bravo_Otto" title="Bravo Otto">Best Actor</a>
+<a href="/wiki/Footloose_(1984_film)" title="Footloose (1984 film)">Footloose</a>
+<a href="/wiki/CableACE_Award" title="CableACE Award">CableACE Awards</a>
+<a href="/wiki/CableACE_Award" title="CableACE Award">Directing a Movie or Miniseries</a>
+<a href="/wiki/Losing_Chase" title="Losing Chase">Losing Chase</a>
+<a class="mw-redirect" href="/wiki/Chlotrudis_Awards" title="Chlotrudis Awards">Chlotrudis Awards</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Critics%27_Choice_Movie_Awards" title="Critics' Choice Movie Awards">Critics' Choice Movie Awards</a>
+<a href="/wiki/Critics%27_Choice_Movie_Award_for_Best_Actor" title="Critics' Choice Movie Award for Best Actor">Best Actor</a>
+<a href="/wiki/Murder_in_the_First_(film)" title="Murder in the First (film)">Murder in the First</a>
+<a class="mw-redirect" href="/wiki/Ghent_International_Film_Festival" title="Ghent International Film Festival">Ghent International Film Festival</a>
+<a class="mw-redirect" href="/wiki/Ghent_International_Film_Festival" title="Ghent International Film Festival">Special Mention</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Giffoni_Film_Festival" title="Giffoni Film Festival">Giffoni Film Festival</a>
+<a href="/wiki/Giffoni_Film_Festival" title="Giffoni Film Festival">Best Actor</a>
+<a href="/wiki/Digging_to_China" title="Digging to China">Digging to China</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)"><i>Mystic River</i></a>
+<a class="mw-redirect" href="/wiki/Golden_Globe_Award" title="Golden Globe Award">Golden Globe Awards</a>
+<a href="/wiki/Golden_Globe_Award_for_Best_Supporting_Actor_%E2%80%93_Motion_Picture" title="Golden Globe Award for Best Supporting Actor – Motion Picture">Best Supporting Actor in a Motion Picture</a>
+<a href="/wiki/The_River_Wild" title="The River Wild">The River Wild</a>
+<a href="/wiki/Golden_Globe_Award_for_Best_Actor_%E2%80%93_Miniseries_or_Television_Film" title="Golden Globe Award for Best Actor – Miniseries or Television Film">Best Actor in a Miniseries or Motion Picture Made for Television</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a href="/wiki/Golden_Globe_Award_for_Best_Actor_%E2%80%93_Television_Series_Musical_or_Comedy" title="Golden Globe Award for Best Actor – Television Series Musical or Comedy">Best Actor in a Television Series – Comedy or Musical</a>
+<a href="/wiki/I_Love_Dick_(TV_series)" title="I Love Dick (TV series)">I Love Dick</a>
+<a href="/wiki/Independent_Spirit_Awards" title="Independent Spirit Awards">Independent Spirit Awards</a>
+<a href="/wiki/Independent_Spirit_Award_for_Best_Male_Lead" title="Independent Spirit Award for Best Male Lead">Best Male Lead</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)"><i>Mystic River</i></a>
+<a href="/wiki/MTV_Movie_%26_TV_Awards" title="MTV Movie &amp; TV Awards">MTV Movie + TV Awards</a>
+<a href="/wiki/MTV_Movie_Award_for_Best_Villain" title="MTV Movie Award for Best Villain">Best Villain</a>
+<a href="/wiki/Hollow_Man" title="Hollow Man">Hollow Man</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a class="mw-redirect" href="/wiki/E!_People%27s_Choice_Awards" title="E! People's Choice Awards">People's Choice Awards</a>
+<a class="mw-redirect" href="/wiki/E!_People%27s_Choice_Awards" title="E! People's Choice Awards">Favorite Dramatic Television Actor</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a class="mw-redirect" href="/wiki/E!_People%27s_Choice_Awards" title="E! People's Choice Awards">Favorite Crime Drama Television Actor</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a class="mw-redirect" href="/wiki/Primetime_Emmy_Award" title="Primetime Emmy Award">Primetime Emmy Awards</a>
+<a class="mw-redirect" href="/wiki/Primetime_Emmy_Award_for_Outstanding_Lead_Actor_in_a_Limited_Series_or_Movie" title="Primetime Emmy Award for Outstanding Lead Actor in a Limited Series or Movie">Outstanding Lead Actor in a Miniseries or a Movie</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a href="/wiki/Satellite_Awards" title="Satellite Awards">Satellite Awards</a>
+<a class="mw-redirect" href="/wiki/Satellite_Award_for_Best_Actor_%E2%80%93_Motion_Picture" title="Satellite Award for Best Actor – Motion Picture">Best Actor in a Motion Picture – Drama</a>
+<a class="mw-redirect" href="/wiki/The_Woodsman_(2004_film)" title="The Woodsman (2004 film)">The Woodsman</a>
+<a href="/wiki/Satellite_Award_for_Best_Actor_%E2%80%93_Miniseries_or_Television_Film" title="Satellite Award for Best Actor – Miniseries or Television Film">Best Actor in a Miniseries or Motion Picture Made for Television</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a class="mw-redirect" href="/wiki/Saturn_Award" title="Saturn Award">Saturn Awards</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_on_Television" title="Saturn Award for Best Actor on Television">Best Actor on Television</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_on_Television" title="Saturn Award for Best Actor on Television">Best Actor on Television</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a href="/wiki/Scream_Awards" title="Scream Awards">Scream Awards</a>
+<a href="/wiki/Scream_Awards" title="Scream Awards">Best Villain</a>
+<a class="mw-redirect" href="/wiki/Screen_Actors_Guild_Award" title="Screen Actors Guild Award">Screen Actors Guild Awards</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Male_Actor_in_a_Supporting_Role" title="Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Supporting Role">Outstanding Performance by a Male Actor in a Supporting Role</a>
+<a href="/wiki/Murder_in_the_First_(film)" title="Murder in the First (film)">Murder in the First</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Cast_in_a_Motion_Picture" title="Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture">Outstanding Performance by a Cast in a Motion Picture</a>
+<a href="/wiki/Apollo_13_(film)" title="Apollo 13 (film)">Apollo 13</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Cast_in_a_Motion_Picture" title="Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture">Outstanding Performance by a Cast in a Motion Picture</a>
+<a href="/wiki/Mystic_River_(film)" title="Mystic River (film)"><i>Mystic River</i></a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Cast_in_a_Motion_Picture" title="Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture">Outstanding Performance by a Cast in a Motion Picture</a>
+<a href="/wiki/Frost/Nixon_(film)" title="Frost/Nixon (film)">Frost/Nixon</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Male_Actor_in_a_Miniseries_or_Television_Movie" title="Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Miniseries or Television Movie">Outstanding Performance by a Male Actor in a Television Movie or Miniseries</a>
+<a href="/wiki/Taking_Chance" title="Taking Chance">Taking Chance</a>
+<a href="/wiki/Teen_Choice_Awards" title="Teen Choice Awards">Teen Choice Awards</a>
+<a href="/wiki/Teen_Choice_Award_for_Choice_Movie_Villain" title="Teen Choice Award for Choice Movie Villain">Choice Movie – Sleazbag</a>
+<a href="/wiki/Beauty_Shop" title="Beauty Shop">Beauty Shop</a>
+<a href="/wiki/Teen_Choice_Award_for_Choice_Movie_Villain" title="Teen Choice Award for Choice Movie Villain">Choice Movie – Villain</a>
+<a href="/wiki/TV_Guide_Award" title="TV Guide Award">TV Guide Awards</a>
+<a href="/wiki/TV_Guide_Award" title="TV Guide Award">Favorite Actor</a>
+<a href="/wiki/The_Following" title="The Following">The Following</a>
+<a href="/wiki/Hollywood_Walk_of_Fame" title="Hollywood Walk of Fame">Hollywood Walk of Fame</a>
+<a href="/wiki/Hollywood_Walk_of_Fame" title="Hollywood Walk of Fame">Hollywood Walk of Fame</a>
+<a href="/wiki/Denver_Film_Festival" title="Denver Film Festival">Denver International Film Festival</a>
+<a href="/wiki/Phoenix_Film_Festival" title="Phoenix Film Festival">Phoenix Film Festival</a>
+<a href="/wiki/Santa_Barbara_International_Film_Festival" title="Santa Barbara International Film Festival">Santa Barbara International Film Festival</a>
+<a class="mw-redirect" href="/wiki/Broadcast_Film_Critics_Association" title="Broadcast Film Critics Association">Broadcast Film Critics Association</a>
+<a href="/wiki/Seattle_International_Film_Festival" title="Seattle International Film Festival">Seattle International Film Festival</a>
+<a href="/wiki/List_of_actors_with_Hollywood_Walk_of_Fame_motion_picture_stars" title="List of actors with Hollywood Walk of Fame motion picture stars">List of actors with Hollywood Walk of Fame motion picture stars</a>
+<a href="/wiki/The_Hollywood_Reporter" title="The Hollywood Reporter">The Hollywood Reporter</a>
+<a href="/wiki/The_Austin_Chronicle" title="The Austin Chronicle">The Austin Chronicle</a>
+<a href="/wiki/Access_Hollywood" title="Access Hollywood">Access Hollywood</a>
+<a href="/wiki/CNN" title="CNN">CNN</a>
+<a class="mw-redirect" href="/wiki/IMDb_(identifier)" title="IMDb (identifier)">IMDb</a>
+<a href="/wiki/Internet_Broadway_Database" title="Internet Broadway Database">Internet Broadway Database</a>
+<a href="/wiki/Internet_Off-Broadway_Database" title="Internet Off-Broadway Database">Internet Off-Broadway Database</a>
+<a href="/wiki/AllMovie" title="AllMovie">AllMovie</a>
+<a href="/wiki/Kevin_Bacon_filmography" title="Kevin Bacon filmography">Filmography</a>
+<a href="/wiki/Losing_Chase" title="Losing Chase">Losing Chase</a>
+<a href="/wiki/Loverboy_(2005_film)" title="Loverboy (2005 film)">Loverboy</a>
+<a href="/wiki/Kyra_Sedgwick" title="Kyra Sedgwick">Kyra Sedgwick</a>
+<a href="/wiki/Sosie_Bacon" title="Sosie Bacon">Sosie Bacon</a>
+<a href="/wiki/Edmund_Bacon_(architect)" title="Edmund Bacon (architect)">Edmund Bacon</a>
+<a href="/wiki/Michael_Bacon_(musician)" title="Michael Bacon (musician)">Michael Bacon</a>
+<a href="/wiki/The_Bacon_Brothers" title="The Bacon Brothers">The Bacon Brothers</a>
+<a href="/wiki/Six_Degrees_of_Kevin_Bacon" title="Six Degrees of Kevin Bacon">Six Degrees of Kevin Bacon</a>
+<a href="/wiki/Erd%C5%91s%E2%80%93Bacon_number" title="Erdős–Bacon number">Erdős–Bacon number</a>
+<a href="/wiki/SixDegrees.org" title="SixDegrees.org">SixDegrees.org</a>
+<a href="/wiki/Critics%27_Choice_Movie_Award_for_Best_Actor" title="Critics' Choice Movie Award for Best Actor">Critics' Choice Movie Award for Best Actor</a>
+<a href="/wiki/Geoffrey_Rush" title="Geoffrey Rush">Geoffrey Rush</a>
+<a href="/wiki/Jack_Nicholson" title="Jack Nicholson">Jack Nicholson</a>
+<a href="/wiki/Ian_McKellen" title="Ian McKellen">Ian McKellen</a>
+<a href="/wiki/Russell_Crowe" title="Russell Crowe">Russell Crowe</a>
+<a href="/wiki/Russell_Crowe" title="Russell Crowe">Russell Crowe</a>
+<a href="/wiki/Russell_Crowe" title="Russell Crowe">Russell Crowe</a>
+<a href="/wiki/Daniel_Day-Lewis" title="Daniel Day-Lewis">Daniel Day-Lewis</a>
+<a href="/wiki/Jack_Nicholson" title="Jack Nicholson">Jack Nicholson</a>
+<a href="/wiki/Sean_Penn" title="Sean Penn">Sean Penn</a>
+<a href="/wiki/Jamie_Foxx" title="Jamie Foxx">Jamie Foxx</a>
+<a href="/wiki/Philip_Seymour_Hoffman" title="Philip Seymour Hoffman">Philip Seymour Hoffman</a>
+<a href="/wiki/Forest_Whitaker" title="Forest Whitaker">Forest Whitaker</a>
+<a href="/wiki/Daniel_Day-Lewis" title="Daniel Day-Lewis">Daniel Day-Lewis</a>
+<a href="/wiki/Sean_Penn" title="Sean Penn">Sean Penn</a>
+<a href="/wiki/Jeff_Bridges" title="Jeff Bridges">Jeff Bridges</a>
+<a href="/wiki/Colin_Firth" title="Colin Firth">Colin Firth</a>
+<a href="/wiki/George_Clooney" title="George Clooney">George Clooney</a>
+<a href="/wiki/Daniel_Day-Lewis" title="Daniel Day-Lewis">Daniel Day-Lewis</a>
+<a href="/wiki/Matthew_McConaughey" title="Matthew McConaughey">Matthew McConaughey</a>
+<a href="/wiki/Michael_Keaton" title="Michael Keaton">Michael Keaton</a>
+<a href="/wiki/Leonardo_DiCaprio" title="Leonardo DiCaprio">Leonardo DiCaprio</a>
+<a href="/wiki/Casey_Affleck" title="Casey Affleck">Casey Affleck</a>
+<a href="/wiki/Gary_Oldman" title="Gary Oldman">Gary Oldman</a>
+<a href="/wiki/Christian_Bale" title="Christian Bale">Christian Bale</a>
+<a href="/wiki/Joaquin_Phoenix" title="Joaquin Phoenix">Joaquin Phoenix</a>
+<a href="/wiki/Chadwick_Boseman" title="Chadwick Boseman">Chadwick Boseman</a>
+<a href="/wiki/Will_Smith" title="Will Smith">Will Smith</a>
+<a href="/wiki/Brendan_Fraser" title="Brendan Fraser">Brendan Fraser</a>
+<a href="/wiki/Paul_Giamatti" title="Paul Giamatti">Paul Giamatti</a>
+<a href="/wiki/Golden_Globe_Award_for_Best_Actor_%E2%80%93_Miniseries_or_Television_Film" title="Golden Globe Award for Best Actor – Miniseries or Television Film">Golden Globe Award for Best Actor in a Limited or Anthology Series or Television Film</a>
+<a href="/wiki/Mickey_Rooney" title="Mickey Rooney">Mickey Rooney</a>
+<a href="/wiki/Anthony_Andrews" title="Anthony Andrews">Anthony Andrews</a>
+<a href="/wiki/Richard_Chamberlain" title="Richard Chamberlain">Richard Chamberlain</a>
+<a href="/wiki/Ted_Danson" title="Ted Danson">Ted Danson</a>
+<a href="/wiki/Dustin_Hoffman" title="Dustin Hoffman">Dustin Hoffman</a>
+<a href="/wiki/James_Woods" title="James Woods">James Woods</a>
+<a href="/wiki/Randy_Quaid" title="Randy Quaid">Randy Quaid</a>
+<a href="/wiki/Michael_Caine" title="Michael Caine">Michael Caine</a>
+<a href="/wiki/Stacy_Keach" title="Stacy Keach">Stacy Keach</a>
+<a href="/wiki/Robert_Duvall" title="Robert Duvall">Robert Duvall</a>
+<a href="/wiki/James_Garner" title="James Garner">James Garner</a>
+<a href="/wiki/Beau_Bridges" title="Beau Bridges">Beau Bridges</a>
+<a href="/wiki/Robert_Duvall" title="Robert Duvall">Robert Duvall</a>
+<a href="/wiki/James_Garner" title="James Garner">James Garner</a>
+<a href="/wiki/Raul_Julia" title="Raul Julia">Raul Julia</a>
+<a href="/wiki/Gary_Sinise" title="Gary Sinise">Gary Sinise</a>
+<a href="/wiki/Alan_Rickman" title="Alan Rickman">Alan Rickman</a>
+<a href="/wiki/Ving_Rhames" title="Ving Rhames">Ving Rhames</a>
+<a href="/wiki/Stanley_Tucci" title="Stanley Tucci">Stanley Tucci</a>
+<a href="/wiki/Jack_Lemmon" title="Jack Lemmon">Jack Lemmon</a>
+<a href="/wiki/Brian_Dennehy" title="Brian Dennehy">Brian Dennehy</a>
+<a href="/wiki/James_Franco" title="James Franco">James Franco</a>
+<a href="/wiki/Albert_Finney" title="Albert Finney">Albert Finney</a>
+<a href="/wiki/Al_Pacino" title="Al Pacino">Al Pacino</a>
+<a href="/wiki/Geoffrey_Rush" title="Geoffrey Rush">Geoffrey Rush</a>
+<a href="/wiki/Jonathan_Rhys_Meyers" title="Jonathan Rhys Meyers">Jonathan Rhys Meyers</a>
+<a href="/wiki/Bill_Nighy" title="Bill Nighy">Bill Nighy</a>
+<a href="/wiki/Jim_Broadbent" title="Jim Broadbent">Jim Broadbent</a>
+<a href="/wiki/Paul_Giamatti" title="Paul Giamatti">Paul Giamatti</a>
+<a href="/wiki/Al_Pacino" title="Al Pacino">Al Pacino</a>
+<a href="/wiki/Idris_Elba" title="Idris Elba">Idris Elba</a>
+<a href="/wiki/Kevin_Costner" title="Kevin Costner">Kevin Costner</a>
+<a href="/wiki/Michael_Douglas" title="Michael Douglas">Michael Douglas</a>
+<a href="/wiki/Billy_Bob_Thornton" title="Billy Bob Thornton">Billy Bob Thornton</a>
+<a href="/wiki/Oscar_Isaac" title="Oscar Isaac">Oscar Isaac</a>
+<a href="/wiki/Tom_Hiddleston" title="Tom Hiddleston">Tom Hiddleston</a>
+<a href="/wiki/Ewan_McGregor" title="Ewan McGregor">Ewan McGregor</a>
+<a href="/wiki/Darren_Criss" title="Darren Criss">Darren Criss</a>
+<a href="/wiki/Russell_Crowe" title="Russell Crowe">Russell Crowe</a>
+<a href="/wiki/Mark_Ruffalo" title="Mark Ruffalo">Mark Ruffalo</a>
+<a href="/wiki/Michael_Keaton" title="Michael Keaton">Michael Keaton</a>
+<a href="/wiki/Evan_Peters" title="Evan Peters">Evan Peters</a>
+<a href="/wiki/Steven_Yeun" title="Steven Yeun">Steven Yeun</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_on_Television" title="Saturn Award for Best Actor on Television">Saturn Award for Best Actor on Television</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_on_Television" title="Saturn Award for Best Actor on Television">Merged</a>
+<a href="/wiki/Kyle_Chandler" title="Kyle Chandler">Kyle Chandler</a>
+<a class="mw-redirect" href="/wiki/Steven_Weber_(actor)" title="Steven Weber (actor)">Steven Weber</a>
+<a href="/wiki/Richard_Dean_Anderson" title="Richard Dean Anderson">Richard Dean Anderson</a>
+<a href="/wiki/David_Boreanaz" title="David Boreanaz">David Boreanaz</a>
+<a href="/wiki/Robert_Patrick" title="Robert Patrick">Robert Patrick</a>
+<a href="/wiki/Ben_Browder" title="Ben Browder">Ben Browder</a>
+<a href="/wiki/David_Boreanaz" title="David Boreanaz">David Boreanaz</a>
+<a href="/wiki/David_Boreanaz" title="David Boreanaz">David Boreanaz</a>
+<a href="/wiki/Ben_Browder" title="Ben Browder">Ben Browder</a>
+<a href="/wiki/Matthew_Fox" title="Matthew Fox">Matthew Fox</a>
+<a href="/wiki/Michael_C._Hall" title="Michael C. Hall">Michael C. Hall</a>
+<a href="/wiki/Matthew_Fox" title="Matthew Fox">Matthew Fox</a>
+<a href="/wiki/Edward_James_Olmos" title="Edward James Olmos">Edward James Olmos</a>
+<a href="/wiki/Josh_Holloway" title="Josh Holloway">Josh Holloway</a>
+<a href="/wiki/Stephen_Moyer" title="Stephen Moyer">Stephen Moyer</a>
+<a href="/wiki/Bryan_Cranston" title="Bryan Cranston">Bryan Cranston</a>
+<a href="/wiki/Bryan_Cranston" title="Bryan Cranston">Bryan Cranston</a>
+<a href="/wiki/Mads_Mikkelsen" title="Mads Mikkelsen">Mads Mikkelsen</a>
+<a href="/wiki/Hugh_Dancy" title="Hugh Dancy">Hugh Dancy</a>
+<a href="/wiki/Andrew_Lincoln" title="Andrew Lincoln">Andrew Lincoln</a>
+<a href="/wiki/Bruce_Campbell" title="Bruce Campbell">Bruce Campbell</a>
+<a href="/wiki/Andrew_Lincoln" title="Andrew Lincoln">Andrew Lincoln</a>
+<a href="/wiki/Kyle_MacLachlan" title="Kyle MacLachlan">Kyle MacLachlan</a>
+<a href="/wiki/Patrick_Stewart" title="Patrick Stewart">Patrick Stewart</a>
+<a class="mw-redirect" href="/wiki/Saturn_Award_for_Best_Actor_in_a_Network_or_Cable_Television_Series" title="Saturn Award for Best Actor in a Network or Cable Television Series">Network/Cable</a>
+<a href="/wiki/Sam_Heughan" title="Sam Heughan">Sam Heughan</a>
+<a href="/wiki/Bob_Odenkirk" title="Bob Odenkirk">Bob Odenkirk</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_in_a_Streaming_Television_Series" title="Saturn Award for Best Actor in a Streaming Television Series">Streaming</a>
+<a href="/wiki/Henry_Thomas" title="Henry Thomas">Henry Thomas</a>
+<a href="/wiki/Oscar_Isaac" title="Oscar Isaac">Oscar Isaac</a>
+<a href="/wiki/Saturn_Award_for_Best_Actor_on_Television" title="Saturn Award for Best Actor on Television">Merged</a>
+<a href="/wiki/Patrick_Stewart" title="Patrick Stewart">Patrick Stewart</a>
+<a href="/wiki/Screen_Actors_Guild_Award_for_Outstanding_Performance_by_a_Male_Actor_in_a_Miniseries_or_Television_Movie" title="Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Miniseries or Television Movie">Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Miniseries or Television Movie</a>
+<a href="/wiki/Raul_Julia" title="Raul Julia">Raul Julia</a>
+<a href="/wiki/Gary_Sinise" title="Gary Sinise">Gary Sinise</a>
+<a href="/wiki/Alan_Rickman" title="Alan Rickman">Alan Rickman</a>
+<a href="/wiki/Gary_Sinise" title="Gary Sinise">Gary Sinise</a>
+<a href="/wiki/Christopher_Reeve" title="Christopher Reeve">Christopher Reeve</a>
+<a href="/wiki/Jack_Lemmon" title="Jack Lemmon">Jack Lemmon</a>
+<a href="/wiki/Brian_Dennehy" title="Brian Dennehy">Brian Dennehy</a>
+<a href="/wiki/Ben_Kingsley" title="Ben Kingsley">Ben Kingsley</a>
+<a href="/wiki/William_H._Macy" title="William H. Macy">William H. Macy</a>
+<a href="/wiki/Al_Pacino" title="Al Pacino">Al Pacino</a>
+<a href="/wiki/Geoffrey_Rush" title="Geoffrey Rush">Geoffrey Rush</a>
+<a href="/wiki/Paul_Newman" title="Paul Newman">Paul Newman</a>
+<a href="/wiki/Jeremy_Irons" title="Jeremy Irons">Jeremy Irons</a>
+<a href="/wiki/Kevin_Kline" title="Kevin Kline">Kevin Kline</a>
+<a href="/wiki/Paul_Giamatti" title="Paul Giamatti">Paul Giamatti</a>
+<a href="/wiki/Al_Pacino" title="Al Pacino">Al Pacino</a>
+<a href="/wiki/Paul_Giamatti" title="Paul Giamatti">Paul Giamatti</a>
+<a href="/wiki/Kevin_Costner" title="Kevin Costner">Kevin Costner</a>
+<a href="/wiki/Michael_Douglas" title="Michael Douglas">Michael Douglas</a>
+<a href="/wiki/Mark_Ruffalo" title="Mark Ruffalo">Mark Ruffalo</a>
+<a href="/wiki/Idris_Elba" title="Idris Elba">Idris Elba</a>
+<a href="/wiki/Bryan_Cranston" title="Bryan Cranston">Bryan Cranston</a>
+<a href="/wiki/Alexander_Skarsg%C3%A5rd" title="Alexander Skarsgård">Alexander Skarsgård</a>
+<a href="/wiki/Darren_Criss" title="Darren Criss">Darren Criss</a>
+<a href="/wiki/Sam_Rockwell" title="Sam Rockwell">Sam Rockwell</a>
+<a href="/wiki/Mark_Ruffalo" title="Mark Ruffalo">Mark Ruffalo</a>
+<a href="/wiki/Michael_Keaton" title="Michael Keaton">Michael Keaton</a>
+<a href="/wiki/Sam_Elliott" title="Sam Elliott">Sam Elliott</a>
+<a href="/wiki/Steven_Yeun" title="Steven Yeun">Steven Yeun</a>
